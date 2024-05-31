@@ -5,60 +5,115 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display:,300, 400, 700"
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display:300,400,700"
           rel="stylesheet">
-
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F46E13TDJY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="css/style.css">
+        gtag('config', 'G-F46E13TDJY');
+    </script>
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #333;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .lead {
+            font-size: 1.25em;
+            font-weight: 300;
+        }
+        .social-links a {
+            color: #333;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #007bff;
+        }
+        hr {
+            border-top: 1px solid #ccc;
+            width: 80%;
+            margin: 30px auto;
+        }
+        footer {
+            font-size: 1em;
+        }
+        .paper-link, .blog-link {
+            display: block;
+            margin: 15px 0;
+            font-size: 1.1em;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .paper-link:hover, .blog-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
+<div class="container animated fadeIn">
+    <img src="img/profile.jpg" alt="Aydin Abedinia" width="250">
+    <h1 class="mb-0">I'm Aydin Abedinia</h1>
+    <p class="lead mb-3">Senior Engineering Manager</p>
+    <p class="lead mb-3">Software engineering, Machine Learning and MLOps engineer | Research Interest: Ensemble Methods: Decision Trees, Random Forest, XGBoost</p>
 
-    <div class="align-content-center align-items-center">
-        <img src="img/profile.jpg" alt="" width="250">
-        <br/><br/><br/>
 
-        <h1 class="mb-0">I'm Aydin Abedinia</h1>
-        <div class="mb-5">
-            <p class="lead mb-3">Engineering Manager (ML and MLOps Engineering)</p>
-            <p></p>
-        </div>
-
-        <p>
-            <a target="_blank" href="https://www.linkedin.com/in/aydin-abedinia-96b2276b" class="mr-2 mb-2">Linkedin</a>
-            <a target="_blank" href="https://medium.com/@abedinia.aydin" class="mr-2 mb-2">Medium</a>
-            <a target="_blank" href="https://www.researchgate.net/profile/Aydin_Abedinia2" class="mr-2 mb-2">Researchgate</a>
-            <a target="_blank" href="https://www.kaggle.com/abedinia" class="mr-2 mb-2">Kaggle</a>
-            <a target="_blank" href="https://github.com/abedinia" class="mr-2 mb-2">Github</a>
-            <a target="_blank" href="https://twitter.com/abedinia_aydin" class="mr-2 mb-2">Twitter</a>
-        </p>
-        <hr>
-        <br/><br/><br/><br/><br/>
-        <p>
-            built with <i class="fa fa-heart-o" aria-hidden="true"></i> in
-            <script>document.write(new Date().getFullYear());</script>
-        </p>
+    <div class="social-links mb-5">
+        <a target="_blank" href="https://www.linkedin.com/in/aydin-abedinia-96b2276b"><i class="fa fa-linkedin"></i></a>
+        <a target="_blank" href="https://medium.com/@abedinia.aydin"><i class="fa fa-medium"></i></a>
+        <a target="_blank" href="https://scholar.google.com/citations?user=B1SRyKwAAAAJ&hl=en"><i class="fa fa-graduation-cap"></i></a>
+        <a target="_blank" href="https://www.researchgate.net/profile/Aydin_Abedinia2"><i class="fa fa-university"></i></a>
+        <a target="_blank" href="https://www.kaggle.com/abedinia"><i class="fa fa-bar-chart"></i></a>
+        <a target="_blank" href="https://github.com/abedinia"><i class="fa fa-github"></i></a>
+        <a target="_blank" href="https://twitter.com/abedinia_aydin"><i class="fa fa-twitter"></i></a>
     </div>
+
+    <a href="https://link.springer.com/article/10.1007/s13042-024-02161-z" class="paper-link" target="_blank">Building semi-supervised decision trees with semi-cart algorithm</a>
+    <a href="https://medium.com/@abedinia.aydin/survey-of-the-decision-trees-algorithms-cart-c4-5-id3-97df842831cd" class="blog-link" target="_blank">Survey of the Decision Trees Algorithms (CART, C4.5, ID3)</a>
+
+
 </div>
-
-
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/main.js"></script>
 </body>
 </html>
