@@ -1,42 +1,73 @@
-# Aydin Abedinia - Portfolio
+# React + TypeScript + Vite
 
-[![alt text](https://img.shields.io/badge/Backend%20Developer-Aydin%20Abedinia-blue)](https://www.linkedin.com/in/aydin-abedinia-96b2276b/)
-[![alt text](https://img.shields.io/badge/Machine%20Learning%20Researcher-Passionate%20About%20AI-brightgreen)](https://scholar.google.com/citations?user=9Gf_jhkAAAAJ&hl=en)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Welcome to my personal portfolio website! I'm Aydin Abedinia
-## Connect With Me
+Currently, two official plugins are available:
 
--   [LinkedIn](https://www.linkedin.com/in/aydin-abedinia-96b2276b/)
--   [Medium](https://medium.com/@abedinia.aydin)
--   [GitHub](https://github.com/abedinia)
--   [Mastodon](https://mastodon.social/@Abedinia)
--   [Xing](https://www.xing.com/profile/Aydin_Abedinia/cv)
--   [ResearchGate](https://www.researchgate.net/profile/Aydin_Abedinia2)
--   [Kaggle](https://www.kaggle.com/abedinia)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Website Features
+## React Compiler
 
--   Technical expertise showcase
--   Machine learning research
--   Backend development projects
--   GitHub repositories
--   Research papers
--   Medium blog posts
--   Dark/light mode
--   Responsive design
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Tech Stack
+## Expanding the ESLint configuration
 
--   React
--   Tailwind CSS
--   Framer Motion
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## Development
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-1.  Clone the repository
-2.  Install dependencies with `npm install`
-3.  Run the development server with `npm run dev`
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-## Deployment
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-The site can be deployed to GitHub Pages or Vercel.
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
