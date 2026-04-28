@@ -1,479 +1,533 @@
 <!doctype html>
 <html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Aydin Abedinia — Ph.D. Student (JD-ICE) · ML Systems · Former MLOps Lead</title>
+    <meta
+      name="description"
+      content="Aydin Abedinia — Ph.D. Student @ UniGe, UC3M, QMUL. Former ML & MLOps Lead @ Snapp!. Building AI systems that matter. Understanding why they work."
+    />
+    <meta name="author" content="Aydin Abedinia" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://abedinia.github.io/" />
+    <meta name="theme-color" content="#06070B" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aydin Abedinia</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Aydin Abedinia" />
+    <meta property="og:title" content="Aydin Abedinia — Ph.D. Student (JD-ICE) · ML Systems · Former MLOps Lead" />
+    <meta
+      property="og:description"
+      content="Ph.D. Student @ UniGe, UC3M, QMUL. Former ML & MLOps Lead @ Snapp!. Building AI systems that matter. Understanding why they work."
+    />
+    <meta property="og:url" content="https://abedinia.github.io/" />
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Aydin Abedinia - Software Engineer, Researcher, and Full-Stack Developer specializing in AI, Machine Learning, and Web Development." />
-  <meta name="keywords" content="Aydin Abedinia, Software Engineer, AI, Machine Learning, Full-Stack Developer, Web Development, Research, Technology" />
-  <meta name="author" content="Aydin Abedinia" />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <link rel="canonical" href="https://abedinia.github.io/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Aydin Abedinia — Ph.D. Student (JD-ICE) · ML Systems · Former MLOps Lead" />
+    <meta
+      name="twitter:description"
+      content="Ph.D. Student @ UniGe, UC3M, QMUL. Former ML & MLOps Lead @ Snapp!. Building AI systems that matter. Understanding why they work."
+    />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://abedinia.github.io/" />
-  <meta property="og:title" content="Aydin Abedinia - Software Engineer & Researcher" />
-  <meta property="og:description" content="Explore my portfolio featuring AI, Machine Learning, and Full-Stack Development projects." />
-  <meta property="og:image" content="https://abedinia.github.io/og-image.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://abedinia.github.io/" />
-  <meta name="twitter:title" content="Aydin Abedinia - Software Engineer & Researcher" />
-  <meta name="twitter:description" content="Explore my portfolio featuring AI, Machine Learning, and Full-Stack Development projects." />
-  <meta name="twitter:image" content="https://abedinia.github.io/og-image.png" />
-
-  <!-- LLM-Friendly Metadata -->
-  <meta name="creator" content="Aydin Abedinia" />
-  <meta name="publisher" content="Aydin Abedinia" />
-  <meta name="subject" content="Personal Portfolio and Professional Profile" />
-  <meta name="language" content="English" />
-  <meta name="revisit-after" content="7 days" />
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3QX5RKQZKW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-3QX5RKQZKW');
-  </script>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
-
-  <!-- Local Styles & Scripts -->
-  <link rel="stylesheet" href="./style.css" />
-  <script src="./script.js" defer></script>
-
-  <!-- Tailwind Play CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            bgDark: '#030712',
-            bgLight: '#fafafa',
-            surfaceDark: '#18181b',
-            surfaceLight: '#ffffff',
-            borderDark: 'rgba(255, 255, 255, 0.1)',
-            borderLight: 'rgba(0, 0, 0, 0.08)',
-            textMutedDark: '#a1a1aa',
-            textMutedLight: '#52525b',
-            accent: '#818cf8', // Indigo
-            accentSecondary: '#34d399', // Emerald
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "name": "Aydin Abedinia",
+            "url": "https://abedinia.github.io/",
+            "description": "Ph.D. Student @ UniGe, UC3M, QMUL. Former ML & MLOps Lead @ Snapp!. Building AI systems that matter. Understanding why they work."
           },
-          fontFamily: {
-            display: ['"DM Serif Display"', 'serif'],
-            sans: ['"DM Sans"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace'],
-          },
-          boxShadow: {
-            glow: '0 0 30px rgba(129, 140, 248, 0.15), 0 0 10px rgba(129, 140, 248, 0.05)',
-            glass: '0 8px 32px 0 rgba(0, 0, 0, 0.1)',
-          },
-          backgroundImage: {
-            'gradient-radial': 'radial-gradient(circle at center, var(--tw-gradient-stops))',
+          {
+            "@type": "Person",
+            "name": "Aydin Abedinia",
+            "url": "https://abedinia.github.io/",
+            "jobTitle": ["Ph.D. Student (JD-ICE)", "Machine Learning Researcher", "ML Systems Engineer"],
+            "affiliation": [
+              { "@type": "Organization", "name": "Universita di Genova" },
+              { "@type": "Organization", "name": "Universidad Carlos III de Madrid" },
+              { "@type": "Organization", "name": "Queen Mary University of London" }
+            ],
+            "knowsAbout": [
+              "Semi-supervised learning",
+              "Self-supervised learning",
+              "Human-centered AI",
+              "LLMOps",
+              "Vision-Language Models",
+              "Edge AI",
+              "MLOps",
+              "Distributed systems"
+            ]
           }
+        ]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      const gaMeasurementId = "G-3QX5RKQZKW";
+      const isLocalhost =
+        location.hostname === "localhost" ||
+        location.hostname === "127.0.0.1" ||
+        location.hostname === "[::1]";
+
+      if (!isLocalhost) {
+        const gaScript = document.createElement("script");
+        gaScript.async = true;
+        gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`;
+        document.head.appendChild(gaScript);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", gaMeasurementId);
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"] },
+            boxShadow: {
+              glass: "0 1px 0 rgba(255,255,255,.06) inset, 0 24px 64px rgba(0,0,0,.55)",
+            },
+            colors: {
+              ink: {
+                950: "#06070B",
+                900: "#0B0D14",
+                800: "#0F1320",
+              },
+            },
+          },
         },
-      },
-    }
-  </script>
-</head>
+      };
+    </script>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      ::selection {
+        background: rgba(129, 140, 248, 0.35);
+      }
+      .bg-grid {
+        background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+        background-size: 22px 22px;
+        background-position: -1px -1px;
+        mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 72%);
+      }
+      .bg-aurora {
+        background:
+          radial-gradient(1100px 550px at 20% -10%, rgba(99, 102, 241, 0.22), transparent 62%),
+          radial-gradient(850px 520px at 90% 0%, rgba(16, 185, 129, 0.12), transparent 60%),
+          radial-gradient(700px 520px at 50% 30%, rgba(14, 165, 233, 0.10), transparent 60%);
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .motion-safe\:animate-pulse {
+          animation: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-ink-950 font-sans text-zinc-100 antialiased">
+    <div class="pointer-events-none fixed inset-0 bg-aurora"></div>
+    <div class="pointer-events-none fixed inset-0 opacity-[0.55] bg-grid"></div>
 
-<body
-  class="bg-bgLight dark:bg-bgDark text-zinc-900 dark:text-zinc-200 transition-colors duration-500 selection:bg-accent/30 font-sans antialiased overflow-x-hidden relative">
-
-  <!-- Background Ambient Glow -->
-  <div class="fixed inset-0 z-[-1] pointer-events-none opacity-20 dark:opacity-10 transition-opacity duration-500">
-    <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-accent/20 blur-[120px]"></div>
-    <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-accentSecondary/10 blur-[120px]">
-    </div>
-  </div>
-
-  <div id="cursor-dot"></div>
-
-  <div id="root-container"
-    class="min-h-[100svh] flex flex-col w-full max-w-5xl mx-auto px-4 md:px-8 border-x border-borderLight dark:border-borderDark/50 bg-transparent">
-
-    <!-- Navbar -->
-    <header
-      class="sticky top-4 z-50 rounded-2xl border border-borderLight dark:border-borderDark bg-surfaceLight/80 dark:bg-surfaceDark/80 backdrop-blur-xl shadow-sm dark:shadow-glass transition-all duration-300 mt-4 mx-2">
-      <div class="mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#"
-          class="font-mono text-lg font-medium tracking-tighter bg-gradient-to-r from-accent to-accentSecondary bg-clip-text text-transparent hover:opacity-80 transition-opacity">AA</a>
-
-        <div class="hidden items-center gap-8 md:flex text-sm font-medium">
-          <a href="#about"
-            class="text-textMutedLight dark:text-textMutedDark hover:text-zinc-900 dark:hover:text-white transition-colors">About</a>
-          <a href="#research"
-            class="text-textMutedLight dark:text-textMutedDark hover:text-zinc-900 dark:hover:text-white transition-colors">Research</a>
-          <a href="#experience"
-            class="text-textMutedLight dark:text-textMutedDark hover:text-zinc-900 dark:hover:text-white transition-colors">Experience</a>
-          <a href="#projects"
-            class="text-textMutedLight dark:text-textMutedDark hover:text-zinc-900 dark:hover:text-white transition-colors">Projects</a>
-
-          <button id="theme-toggle" aria-label="Toggle theme"
-            class="text-textMutedLight dark:text-textMutedDark hover:text-accent transition-colors ml-4">
-            <!-- Sun Icon -->
-            <svg id="theme-icon-light" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              class="hidden">
-              <circle cx="12" cy="12" r="4" />
-              <path d="M12 2v2" />
-              <path d="M12 20v2" />
-              <path d="m4.93 4.93 1.41 1.41" />
-              <path d="m17.66 17.66 1.41 1.41" />
-              <path d="M2 12h2" />
-              <path d="M20 12h2" />
-              <path d="m6.34 17.66-1.41 1.41" />
-              <path d="m19.07 4.93-1.41 1.41" />
-            </svg>
-            <!-- Moon Icon -->
-            <svg id="theme-icon-dark" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-            </svg>
-          </button>
-        </div>
-
-        <button id="mobile-menu-btn"
-          class="md:hidden text-textMutedLight dark:text-textMutedDark hover:text-zinc-900 dark:hover:text-white transition-colors">
-          <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="4" x2="20" y1="12" y2="12" />
-            <line x1="4" x2="20" y1="6" y2="6" />
-            <line x1="4" x2="20" y1="18" y2="18" />
-          </svg>
-          <svg id="menu-icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path d="M18 6 6 18" />
-            <path d="m6 6 12 12" />
-          </svg>
-        </button>
-      </div>
-
-      <!-- Mobile Menu Panel -->
-      <div id="mobile-menu"
-        class="hidden border-t border-borderLight dark:border-borderDark bg-surfaceLight/95 dark:bg-surfaceDark/95 backdrop-blur-xl p-6 rounded-b-2xl md:hidden text-left shadow-lg">
-        <div class="flex flex-col gap-5 font-medium">
-          <a href="#about"
-            class="text-textMutedLight dark:text-textMutedDark hover:text-accent transition-colors">About</a>
-          <a href="#research"
-            class="text-textMutedLight dark:text-textMutedDark hover:text-accent transition-colors">Research</a>
-          <a href="#experience"
-            class="text-textMutedLight dark:text-textMutedDark hover:text-accent transition-colors">Experience</a>
-          <a href="#projects"
-            class="text-textMutedLight dark:text-textMutedDark hover:text-accent transition-colors">Projects</a>
-          <div class="h-px w-full bg-borderLight dark:bg-borderDark"></div>
-          <button id="mobile-theme-toggle"
-            class="text-left text-textMutedLight dark:text-textMutedDark hover:text-accent transition-colors flex items-center gap-2">
-            Toggle theme
-          </button>
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-ink-950/55 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+        <a href="#top" class="inline-flex items-center gap-3">
+          <span class="inline-flex h-8 items-center justify-center rounded-lg border border-white/10 bg-white/[0.04] px-2.5 text-xs font-semibold tracking-[0.22em] text-zinc-200 shadow-glass">
+            AA
+          </span>
+        </a>
+        <nav class="flex items-center gap-5 text-sm font-medium text-zinc-300 md:gap-7">
+          <a href="#about" class="hover:text-zinc-100">About</a>
+          <a href="#research" class="hover:text-zinc-100">Research</a>
+          <a href="#experience" class="hover:text-zinc-100">Experience</a>
+          <a href="#projects" class="hover:text-zinc-100">Projects</a>
+        </nav>
+        <div class="hidden md:flex items-center gap-2">
+          <span class="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-200">
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="motion-safe:animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400/40 opacity-75"></span>
+              <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-300"></span>
+            </span>
+            Status
+          </span>
+          <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-medium text-zinc-200/90">
+            Currently: Researching at Elios Lab / Building Nerom.
+          </span>
         </div>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="text-left py-16 md:py-28 w-full flex-grow mx-auto px-2 md:px-6">
+    <main id="top" class="relative">
+      <section class="mx-auto max-w-6xl px-5 pb-14 pt-14 md:pb-20 md:pt-20">
+        <div class="rounded-3xl border border-white/10 bg-white/[0.04] px-6 py-10 shadow-glass backdrop-blur-xl md:px-10 md:py-14">
+          <div class="flex flex-wrap items-center gap-2 md:hidden">
+            <span class="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-200">
+              <span class="relative flex h-2.5 w-2.5">
+                <span class="motion-safe:animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400/40 opacity-75"></span>
+                <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-300"></span>
+              </span>
+              Status
+            </span>
+            <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-medium text-zinc-200/90">
+              Currently: Researching at Elios Lab / Building Nerom.
+            </span>
+          </div>
 
-      <!-- Hero Section -->
-      <section class="py-12 md:py-24 relative">
-        <h1 class="font-display text-6xl md:text-[6rem] leading-[1.1] tracking-tight text-zinc-900 dark:text-white">
-          Aydin Abedinia
-        </h1>
-        <p
-          class="mt-6 font-mono text-xl md:text-2xl bg-gradient-to-r from-accent to-accentSecondary bg-clip-text text-transparent inline-block">
-          Ph.D. Student @ UniGe, UC3M, QMUL
-        </p>
-        <p class="mt-3 text-textMutedLight dark:text-textMutedDark font-mono text-sm tracking-wide uppercase">
-          Former ML & MLOps Lead @ Snapp!
-        </p>
-        <p class="mt-8 max-w-2xl text-xl md:text-2xl leading-relaxed text-zinc-700 dark:text-zinc-300 font-light">
-          Building AI systems that matter. Understanding why they work.
-        </p>
-        <div class="mt-12 flex flex-wrap gap-4">
-          <a href="#research"
-            class="group relative px-6 py-3 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-medium overflow-hidden transition-all hover:scale-105 hover:shadow-glow">
-            <span class="relative z-10">View Research</span>
-          </a>
-          <a href="#projects"
-            class="px-6 py-3 rounded-full border border-borderLight dark:border-borderDark hover:bg-surfaceLight dark:hover:bg-surfaceDark text-zinc-700 dark:text-zinc-300 font-medium transition-all hover:scale-105">
-            View Projects
-          </a>
-        </div>
-      </section>
+          <h1 class="mt-6 text-balance text-4xl font-semibold tracking-tight text-zinc-100 md:mt-0 md:text-6xl">
+            Aydin Abedinia
+          </h1>
 
-      <!-- About Section -->
-      <section id="about" class="py-20 relative">
-        <div
-          class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-borderLight dark:via-borderDark to-transparent">
-        </div>
-        <div class="mb-10 flex items-center gap-4">
-          <p class="font-mono text-xs tracking-[0.3em] text-accent font-medium">01</p>
-          <h2 class="font-display text-4xl dark:text-white text-zinc-900">About</h2>
-        </div>
-        <div class="space-y-6 text-lg md:text-xl text-zinc-600 dark:text-zinc-400 font-light leading-relaxed max-w-3xl">
-          <p>I am Aydin Abedinia, a Machine Learning Researcher with 8+ years of industry experience, currently pursuing
-            a Joint European PhD (JD-ICE) in Interactive and Cognitive Environments across Universita di Genova,
-            Universidad Carlos III de Madrid, and Queen Mary University of London.</p>
-          <p>At Snapp, I led the MLOps and AI Platform team, delivering machine learning systems used by millions of
-            users daily while driving a transition from monolith to microservices.</p>
-          <p class="text-zinc-900 dark:text-zinc-200 font-medium">What drives me is the space between theory and impact:
-            building things that matter, and understanding why they work.</p>
-        </div>
-      </section>
+          <div class="mt-4 space-y-1.5">
+            <p class="text-sm font-semibold text-zinc-200 md:text-base">Ph.D. Student @ UniGe, UC3M, QMUL</p>
+            <p class="text-sm font-semibold text-zinc-200 md:text-base">Former ML &amp; MLOps Lead @ Snapp!</p>
+          </div>
 
-      <!-- Where I Am Now -->
-      <section class="py-20 relative">
-        <div
-          class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-borderLight dark:via-borderDark to-transparent">
-        </div>
-        <div class="mb-10 flex items-center gap-4">
-          <p class="font-mono text-xs tracking-[0.3em] text-accent font-medium">02</p>
-          <h2 class="font-display text-4xl dark:text-white text-zinc-900">Current Focus</h2>
-        </div>
-        <article
-          class="rounded-2xl border border-borderLight dark:border-borderDark bg-surfaceLight/80 dark:bg-surfaceDark/80 backdrop-blur-md p-8 relative overflow-hidden group">
-          <div class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-accent to-accentSecondary"></div>
-          <p class="font-medium text-2xl text-zinc-900 dark:text-white">Ph.D. Student, JD-ICE Joint Doctorate</p>
-          <p class="mt-3 text-textMutedLight dark:text-textMutedDark leading-relaxed">Universita di Genova (ELIOS Lab) ·
-            Supervisors: Prof. Francesco Bellotti, Prof. Riccardo Berta <br /> Partners: UC3M and QMUL · Started: 2025
+          <p class="mt-6 max-w-3xl text-pretty text-base leading-relaxed text-zinc-300 md:text-lg">
+            Building AI systems that matter. Understanding why they work.
           </p>
-        </article>
+
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a
+              href="#research"
+              class="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2.5 text-sm font-semibold text-ink-950 shadow-glass transition hover:bg-zinc-100"
+            >
+              <i data-lucide="book-open" class="h-4 w-4"></i>
+              View Research
+            </a>
+            <a
+              href="#projects"
+              class="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm font-semibold text-zinc-100 shadow-glass transition hover:border-white/20 hover:bg-white/[0.06]"
+            >
+              <i data-lucide="code" class="h-4 w-4"></i>
+              View Projects
+            </a>
+          </div>
+        </div>
       </section>
 
-      <!-- Experience Timeline -->
-      <section id="experience" class="py-20 relative">
-        <div
-          class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-borderLight dark:via-borderDark to-transparent">
-        </div>
-        <div class="mb-10 flex items-center gap-4">
-          <p class="font-mono text-xs tracking-[0.3em] text-accent font-medium">03</p>
-          <h2 class="font-display text-4xl dark:text-white text-zinc-900">Experience</h2>
-        </div>
-        <div
-          class="relative pl-8 max-w-3xl before:absolute before:left-[11px] before:top-2 before:h-full before:w-[2px] before:bg-gradient-to-b before:from-accent before:via-borderLight dark:before:via-borderDark before:to-transparent">
-          <div class="space-y-10">
-            <div class="relative">
-              <span
-                class="absolute -left-[41px] top-2 h-4 w-4 rounded-full bg-bgLight dark:bg-bgDark border-2 border-accent shadow-[0_0_10px_rgba(129,140,248,0.5)]"></span>
-              <h3 class="text-xl font-medium text-zinc-900 dark:text-white">Technical Lead (MLOps & AI Platform)</h3>
-              <p class="font-mono text-sm text-accent mt-1">Snapp! · Jun 2023 – Aug 2025</p>
+      <section id="about" class="mx-auto max-w-6xl px-5 pb-10 md:pb-12">
+        <div class="grid gap-4 md:grid-cols-12 md:gap-8">
+          <div class="md:col-span-2">
+            <p class="text-xs font-semibold tracking-[0.28em] text-zinc-500">01</p>
+          </div>
+          <div class="md:col-span-10">
+            <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-glass backdrop-blur-xl md:p-8">
+              <h2 class="text-2xl font-semibold tracking-tight text-zinc-100 md:text-3xl">About</h2>
+              <div class="mt-4 space-y-4 text-sm leading-relaxed text-zinc-300 md:text-base">
+                <p>
+                  I am Aydin Abedinia, a Machine Learning Researcher with 8+ years of industry experience, currently pursuing a Joint
+                  European PhD (JD-ICE) in Interactive and Cognitive Environments across Universita di Genova, Universidad Carlos III de
+                  Madrid, and Queen Mary University of London.
+                </p>
+                <p>
+                  At Snapp, I led the MLOps and AI Platform team, delivering machine learning systems used by millions of users daily
+                  while driving a transition from monolith to microservices.
+                </p>
+                <p>
+                  What drives me is the space between theory and impact: building things that matter, and understanding why they work.
+                </p>
+              </div>
             </div>
-            <div class="relative">
-              <span class="absolute -left-[39px] top-2 h-3 w-3 rounded-full bg-borderLight dark:bg-borderDark"></span>
-              <h3 class="text-lg text-zinc-700 dark:text-zinc-300">Senior ML Engineer / MLOps</h3>
-              <p class="font-mono text-sm text-textMutedLight dark:text-textMutedDark mt-1">Snapp! · Jun 2020 – Jun 2023
+          </div>
+        </div>
+      </section>
+
+      <section id="focus" class="mx-auto max-w-6xl px-5 pb-10 md:pb-12">
+        <div class="grid gap-4 md:grid-cols-12 md:gap-8">
+          <div class="md:col-span-2">
+            <p class="text-xs font-semibold tracking-[0.28em] text-zinc-500">02</p>
+          </div>
+          <div class="md:col-span-10">
+            <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-glass backdrop-blur-xl md:p-8">
+              <h2 class="text-2xl font-semibold tracking-tight text-zinc-100 md:text-3xl">Current Focus</h2>
+              <div class="mt-5 grid gap-4 md:grid-cols-2">
+                <div class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <p class="text-sm font-semibold text-zinc-100">Ph.D. Student, JD-ICE Joint Doctorate</p>
+                  <p class="mt-2 text-sm text-zinc-300">
+                    Universita di Genova (ELIOS Lab) 
+                  </p>
+                  <p class="mt-2 text-sm text-zinc-400">Partners: UC3M and QMUL · Started: 2025</p>
+                </div>
+                <div class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <p class="text-xs font-semibold tracking-[0.22em] text-zinc-400">Core theme</p>
+                  <p class="mt-2 text-sm font-semibold text-zinc-100">Theory → Impact</p>
+                  <p class="mt-2 text-sm text-zinc-300">
+                    Research at the intersection of AI, cognition, and human-centered systems, with a systems-first engineering mindset.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="mx-auto max-w-6xl px-5 pb-10 md:pb-12">
+        <div class="grid gap-4 md:grid-cols-12 md:gap-8">
+          <div class="md:col-span-2">
+            <p class="text-xs font-semibold tracking-[0.28em] text-zinc-500">03</p>
+          </div>
+          <div class="md:col-span-10">
+            <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-glass backdrop-blur-xl md:p-8">
+              <h2 class="text-2xl font-semibold tracking-tight text-zinc-100 md:text-3xl">Experience</h2>
+              <div class="mt-5 grid gap-3">
+                <div class="flex flex-col gap-1 rounded-xl border border-white/10 bg-white/[0.03] p-5 md:flex-row md:items-baseline md:justify-between">
+                  <p class="text-sm font-semibold text-zinc-100">Technical Lead (MLOps &amp; AI Platform)</p>
+                  <p class="text-sm text-zinc-400">Snapp! · Jun 2023 – Aug 2025</p>
+                </div>
+                <div class="flex flex-col gap-1 rounded-xl border border-white/10 bg-white/[0.03] p-5 md:flex-row md:items-baseline md:justify-between">
+                  <p class="text-sm font-semibold text-zinc-100">Senior ML Engineer / MLOps</p>
+                  <p class="text-sm text-zinc-400">Snapp! · Jun 2020 – Jun 2023</p>
+                </div>
+                <div class="flex flex-col gap-1 rounded-xl border border-white/10 bg-white/[0.03] p-5 md:flex-row md:items-baseline md:justify-between">
+                  <p class="text-sm font-semibold text-zinc-100">Senior Software Engineer</p>
+                  <p class="text-sm text-zinc-400">Snapp! · Jun 2017 – Jun 2020</p>
+                </div>
+                <div class="flex flex-col gap-1 rounded-xl border border-white/10 bg-white/[0.03] p-5 md:flex-row md:items-baseline md:justify-between">
+                  <p class="text-sm font-semibold text-zinc-100">Senior Software Engineer</p>
+                  <p class="text-sm text-zinc-400">GSM Group · Sep 2016 – Jun 2017</p>
+                </div>
+                <div class="flex flex-col gap-1 rounded-xl border border-white/10 bg-white/[0.03] p-5 md:flex-row md:items-baseline md:justify-between">
+                  <p class="text-sm font-semibold text-zinc-100">Software Engineer</p>
+                  <p class="text-sm text-zinc-400">Takesh.ir · Sep 2015 – Sep 2016</p>
+                </div>
+              </div>
+              <div class="mt-6 rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                <p class="text-sm text-zinc-300">
+                  At Snapp, I led the MLOps and AI Platform team, shipping ML systems used by millions of people daily while driving a
+                  transition from monolith to microservices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="mx-auto max-w-6xl px-5 pb-10 md:pb-12">
+        <div class="grid gap-4 md:grid-cols-12 md:gap-8">
+          <div class="md:col-span-2">
+            <p class="text-xs font-semibold tracking-[0.28em] text-zinc-500">04</p>
+          </div>
+          <div class="md:col-span-10">
+            <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-glass backdrop-blur-xl md:p-8">
+              <div class="flex flex-wrap items-baseline justify-between gap-4">
+                <h2 class="text-2xl font-semibold tracking-tight text-zinc-100 md:text-3xl">Publications</h2>
+                <div class="flex flex-wrap items-center gap-2 text-sm text-zinc-400">
+                  <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1">
+                    <i data-lucide="sparkles" class="h-4 w-4 text-zinc-300"></i>
+                    Research
+                  </span>
+                </div>
+              </div>
+
+              <p class="mt-4 text-sm leading-relaxed text-zinc-300 md:text-base">
+                Research interests include semi-supervised and self-supervised learning, deep learning, reinforcement learning, causal
+                methods, and human-centered AI systems.
               </p>
-            </div>
-            <div class="relative">
-              <span class="absolute -left-[39px] top-2 h-3 w-3 rounded-full bg-borderLight dark:bg-borderDark"></span>
-              <h3 class="text-lg text-zinc-700 dark:text-zinc-300">Senior Software Engineer</h3>
-              <p class="font-mono text-sm text-textMutedLight dark:text-textMutedDark mt-1">Snapp! · Jun 2017 – Jun 2020
-              </p>
-            </div>
-            <div class="relative">
-              <span class="absolute -left-[39px] top-2 h-3 w-3 rounded-full bg-borderLight dark:bg-borderDark"></span>
-              <h3 class="text-lg text-zinc-700 dark:text-zinc-300">Senior Software Engineer</h3>
-              <p class="font-mono text-sm text-textMutedLight dark:text-textMutedDark mt-1">GSM Group · Sep 2016 – Jun
-                2017</p>
-            </div>
-            <div class="relative">
-              <span class="absolute -left-[39px] top-2 h-3 w-3 rounded-full bg-borderLight dark:bg-borderDark"></span>
-              <h3 class="text-lg text-zinc-700 dark:text-zinc-300">Software Engineer</h3>
-              <p class="font-mono text-sm text-textMutedLight dark:text-textMutedDark mt-1">Takesh.ir · Sep 2015 – Sep
-                2016</p>
+
+              <div class="mt-6 grid gap-3">
+                <article class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <p class="text-sm font-semibold text-zinc-100">
+                    Enhancing Classification with Semi-Supervised Deep Learning Using Distance-Based Sample Weights
+                  </p>
+                  <p class="mt-2 text-sm text-zinc-300">A Abedinia, S Tabakhi, V Seydi</p>
+                  <p class="mt-1 text-sm text-zinc-400">ICMLT 2025, Helsinki · IEEE · Oral Presentation</p>
+                </article>
+                <article class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <p class="text-sm font-semibold text-zinc-100">Building Semi-Supervised Decision Trees with Semi-CART Algorithm</p>
+                  <p class="mt-2 text-sm text-zinc-300">A Abedinia, V Seydi</p>
+                  <p class="mt-1 text-sm text-zinc-400">Int. Journal of Machine Learning and Cybernetics, Springer · 2024</p>
+                </article>
+              </div>
+
+              <div class="mt-6 flex flex-wrap items-center gap-3">
+                <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-sm font-medium text-zinc-300">
+                  Google Scholar
+                  <i data-lucide="arrow-up-right" class="h-4 w-4 text-zinc-400"></i>
+                </span>
+                <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-sm font-medium text-zinc-300">
+                  ResearchGate
+                  <i data-lucide="arrow-up-right" class="h-4 w-4 text-zinc-400"></i>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Research & Publications -->
-      <section id="research" class="py-20 relative">
-        <div
-          class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-borderLight dark:via-borderDark to-transparent">
-        </div>
-        <div class="mb-10 flex items-center gap-4">
-          <p class="font-mono text-xs tracking-[0.3em] text-accent font-medium">04</p>
-          <h2 class="font-display text-4xl dark:text-white text-zinc-900">Publications</h2>
-        </div>
-        <p class="mb-10 text-lg text-zinc-600 dark:text-zinc-400 font-light max-w-3xl leading-relaxed">
-          Research interests include semi-supervised and self-supervised learning, deep learning, reinforcement
-          learning,
-          causal methods, and human-centered AI systems.
-        </p>
-        <div class="grid gap-6 md:grid-cols-2">
-          <article
-            class="group rounded-2xl border border-borderLight dark:border-borderDark bg-surfaceLight/70 dark:bg-surfaceDark/70 backdrop-blur-sm p-8 transition-all duration-500 hover:border-accent/50 hover:bg-surfaceLight dark:hover:bg-surfaceDark hover:shadow-glow hover:-translate-y-1">
-            <h3
-              class="font-display text-2xl leading-tight text-zinc-900 dark:text-white group-hover:text-accent transition-colors">
-              Enhancing Classification with Semi-Supervised Deep Learning Using Distance-Based Sample Weights</h3>
-            <p class="mt-4 font-mono text-sm text-textMutedLight dark:text-textMutedDark leading-relaxed">A Abedinia, S
-              Tabakhi, V Seydi <br /><span class="text-zinc-700 dark:text-zinc-300 mt-1 inline-block">ICMLT 2025,
-                Helsinki · IEEE · Oral Presentation</span></p>
-          </article>
-          <article
-            class="group rounded-2xl border border-borderLight dark:border-borderDark bg-surfaceLight/70 dark:bg-surfaceDark/70 backdrop-blur-sm p-8 transition-all duration-500 hover:border-accent/50 hover:bg-surfaceLight dark:hover:bg-surfaceDark hover:shadow-glow hover:-translate-y-1">
-            <h3
-              class="font-display text-2xl leading-tight text-zinc-900 dark:text-white group-hover:text-accent transition-colors">
-              Building Semi-Supervised Decision Trees with Semi-CART Algorithm</h3>
-            <p class="mt-4 font-mono text-sm text-textMutedLight dark:text-textMutedDark leading-relaxed">A Abedinia, V
-              Seydi <br /><span class="text-zinc-700 dark:text-zinc-300 mt-1 inline-block">Int. Journal of Machine
-                Learning and Cybernetics, Springer · 2024</span></p>
-          </article>
-        </div>
-        <div class="mt-10 flex flex-wrap gap-4 font-mono text-sm">
-          <a class="px-4 py-2 rounded-full border border-borderLight dark:border-borderDark hover:bg-surfaceLight dark:hover:bg-surfaceDark hover:text-accent transition-all"
-            href="https://scholar.google.com/citations?user=B1SRyKwAAAAJ&hl=en" target="_blank">Google Scholar ↗</a>
-          <a class="px-4 py-2 rounded-full border border-borderLight dark:border-borderDark hover:bg-surfaceLight dark:hover:bg-surfaceDark hover:text-accent transition-all"
-            href="https://www.researchgate.net/profile/Aydin-Abedinia-2" target="_blank">ResearchGate ↗</a>
-        </div>
-      </section>
+      <section id="expertise" class="mx-auto max-w-6xl px-5 pb-10 md:pb-12">
+        <div class="grid gap-4 md:grid-cols-12 md:gap-8">
+          <div class="md:col-span-2">
+            <p class="text-xs font-semibold tracking-[0.28em] text-zinc-500">05</p>
+          </div>
+          <div class="md:col-span-10">
+            <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-glass backdrop-blur-xl md:p-8">
+              <h2 class="text-2xl font-semibold tracking-tight text-zinc-100 md:text-3xl">Expertise</h2>
+              <div class="mt-6 grid gap-4 md:grid-cols-2">
+                <article class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <p class="text-sm font-semibold text-zinc-100">Languages</p>
+                  <div class="mt-3 flex flex-wrap gap-2">
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Python</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Go</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Rust</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">SQL</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Bash</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">LaTeX</span>
+                  </div>
+                </article>
 
-      <!-- Skills -->
-      <section class="py-20 relative">
-        <div
-          class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-borderLight dark:via-borderDark to-transparent">
-        </div>
-        <div class="mb-10 flex items-center gap-4">
-          <p class="font-mono text-xs tracking-[0.3em] text-accent font-medium">05</p>
-          <h2 class="font-display text-4xl dark:text-white text-zinc-900">Expertise</h2>
-        </div>
-        <div class="grid gap-6 md:grid-cols-2">
-          <div
-            class="p-6 rounded-2xl border border-borderLight dark:border-borderDark bg-surfaceLight/60 dark:bg-surfaceDark/60 backdrop-blur-sm">
-            <p class="font-mono text-sm text-accent mb-3 uppercase tracking-wider">Languages</p>
-            <p class="text-zinc-700 dark:text-zinc-300">Python, Go, Rust, PHP, SQL, Bash, LaTeX</p>
-          </div>
-          <div
-            class="p-6 rounded-2xl border border-borderLight dark:border-borderDark bg-surfaceLight/60 dark:bg-surfaceDark/60 backdrop-blur-sm">
-            <p class="font-mono text-sm text-accent mb-3 uppercase tracking-wider">MLOps & Infra</p>
-            <p class="text-zinc-700 dark:text-zinc-300">Docker, Kubernetes, Helm, Terraform, Kafka, NATS, Prometheus,
-              Grafana</p>
-          </div>
-          <div
-            class="p-6 rounded-2xl border border-borderLight dark:border-borderDark bg-surfaceLight/60 dark:bg-surfaceDark/60 backdrop-blur-sm">
-            <p class="font-mono text-sm text-accent mb-3 uppercase tracking-wider">ML Frameworks</p>
-            <p class="text-zinc-700 dark:text-zinc-300">TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas</p>
-          </div>
-          <div
-            class="p-6 rounded-2xl border border-borderLight dark:border-borderDark bg-surfaceLight/60 dark:bg-surfaceDark/60 backdrop-blur-sm">
-            <p class="font-mono text-sm text-accent mb-3 uppercase tracking-wider">Research Areas</p>
-            <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">Semi-Supervised Learning, Deep Learning, RL,
-              Human-Centered AI, Causal Inference, Bayesian DL, LLMs</p>
+                <article class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <p class="text-sm font-semibold text-zinc-100">MLOps &amp; Infra</p>
+                  <div class="mt-3 flex flex-wrap gap-2">
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Docker</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Kubernetes</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">AWS</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Terraform</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Kafka</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Prometheus</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Grafana</span>
+                  </div>
+                </article>
+
+                <article class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <p class="text-sm font-semibold text-zinc-100">ML Frameworks</p>
+                  <div class="mt-3 flex flex-wrap gap-2">
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">TensorFlow</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">PyTorch</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Scikit-learn</span>
+                  </div>
+                </article>
+
+                <article class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <p class="text-sm font-semibold text-zinc-100">LLMOps / VLM / Edge AI</p>
+                  <div class="mt-3 flex flex-wrap gap-2">
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">LLMOps</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">vLLM</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Quantization (GPTQ, AWQ)</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Vision-Language Models</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Edge AI</span>
+                  </div>
+                </article>
+
+                <article class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <p class="text-sm font-semibold text-zinc-100">Research Areas</p>
+                  <div class="mt-3 flex flex-wrap gap-2">
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Semi-Supervised Learning</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Self-Supervised Learning</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">RL</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Human-Centered AI</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">Causal Inference</span>
+                    <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium text-zinc-300">LLMs</span>
+                  </div>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Featured Projects -->
-      <section id="projects" class="py-20 relative">
-        <div
-          class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-borderLight dark:via-borderDark to-transparent">
-        </div>
-        <div class="mb-10 flex items-center gap-4">
-          <p class="font-mono text-xs tracking-[0.3em] text-accent font-medium">06</p>
-          <h2 class="font-display text-4xl dark:text-white text-zinc-900">Projects</h2>
-        </div>
-        <div class="grid gap-6 md:grid-cols-2">
-          <article
-            class="group relative p-8 rounded-2xl border border-borderLight dark:border-borderDark bg-surfaceLight/60 dark:bg-surfaceDark/60 backdrop-blur-sm overflow-hidden transition-all duration-500 hover:border-accent/30 hover:bg-surfaceLight/80 dark:hover:bg-surfaceDark/80 cursor-pointer">
-            <div
-              class="absolute inset-0 bg-gradient-to-br from-accent/0 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+      <section id="projects" class="mx-auto max-w-6xl px-5 pb-16 md:pb-24">
+        <div class="grid gap-4 md:grid-cols-12 md:gap-8">
+          <div class="md:col-span-2">
+            <p class="text-xs font-semibold tracking-[0.28em] text-zinc-500">06</p>
+          </div>
+          <div class="md:col-span-10">
+            <div class="rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-glass backdrop-blur-xl md:p-8">
+              <h2 class="text-2xl font-semibold tracking-tight text-zinc-100 md:text-3xl">Projects</h2>
+              <div class="mt-6 grid gap-4 md:grid-cols-2">
+                <article class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <p class="text-sm font-semibold text-zinc-100">SemiCART</p>
+                    <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold text-zinc-300">Python</span>
+                  </div>
+                  <p class="mt-2 text-sm text-zinc-300">Semi-Supervised Decision Trees algorithm implementation.</p>
+                </article>
+
+                <article class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <p class="text-sm font-semibold text-zinc-100">Rust Decision Tree</p>
+                    <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold text-zinc-300">Rust</span>
+                  </div>
+                  <p class="mt-2 text-sm text-zinc-300">High-performance Machine Learning implementation built with Rust.</p>
+                </article>
+
+                <article class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <p class="text-sm font-semibold text-zinc-100">SemiDeep</p>
+                    <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold text-zinc-300">Python</span>
+                  </div>
+                  <p class="mt-2 text-sm text-zinc-300">Distance-based SSL experiments and deep learning pipeline.</p>
+                </article>
+
+                <article class="rounded-xl border border-white/10 bg-white/[0.03] p-5">
+                  <div class="flex items-center justify-between gap-3">
+                    <p class="text-sm font-semibold text-zinc-100">NetExecGo</p>
+                    <span class="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold text-zinc-300">Go</span>
+                  </div>
+                  <p class="mt-2 text-sm text-zinc-300">SOCKS5 proxy CLI tool for network execution and routing.</p>
+                </article>
+              </div>
             </div>
-            <h3 class="font-display text-2xl text-zinc-900 dark:text-white group-hover:text-accent transition-colors">
-              SemiCART</h3>
-            <p class="font-mono text-xs text-textMutedLight dark:text-textMutedDark mt-2">Python</p>
-            <p class="mt-4 text-zinc-600 dark:text-zinc-400 font-light">Semi-Supervised Decision Trees algorithm
-              implementation.</p>
-          </article>
-          <article
-            class="group relative p-8 rounded-2xl border border-borderLight dark:border-borderDark bg-surfaceLight/60 dark:bg-surfaceDark/60 backdrop-blur-sm overflow-hidden transition-all duration-500 hover:border-accentSecondary/30 hover:bg-surfaceLight/80 dark:hover:bg-surfaceDark/80 cursor-pointer">
-            <div
-              class="absolute inset-0 bg-gradient-to-br from-accentSecondary/0 to-accentSecondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            </div>
-            <h3
-              class="font-display text-2xl text-zinc-900 dark:text-white group-hover:text-accentSecondary transition-colors">
-              Rust Decision Tree</h3>
-            <p class="font-mono text-xs text-textMutedLight dark:text-textMutedDark mt-2">Rust</p>
-            <p class="mt-4 text-zinc-600 dark:text-zinc-400 font-light">High-performance Machine Learning implementation
-              built with Rust.</p>
-          </article>
-          <article
-            class="group relative p-8 rounded-2xl border border-borderLight dark:border-borderDark bg-surfaceLight/60 dark:bg-surfaceDark/60 backdrop-blur-sm overflow-hidden transition-all duration-500 hover:border-accent/30 hover:bg-surfaceLight/80 dark:hover:bg-surfaceDark/80 cursor-pointer">
-            <div
-              class="absolute inset-0 bg-gradient-to-br from-accent/0 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            </div>
-            <h3 class="font-display text-2xl text-zinc-900 dark:text-white group-hover:text-accent transition-colors">
-              SemiDeep</h3>
-            <p class="font-mono text-xs text-textMutedLight dark:text-textMutedDark mt-2">Python</p>
-            <p class="mt-4 text-zinc-600 dark:text-zinc-400 font-light">Distance-based SSL experiments and deep learning
-              pipeline.</p>
-          </article>
-          <article
-            class="group relative p-8 rounded-2xl border border-borderLight dark:border-borderDark bg-surfaceLight/60 dark:bg-surfaceDark/60 backdrop-blur-sm overflow-hidden transition-all duration-500 hover:border-zinc-400 dark:hover:border-zinc-500 hover:bg-surfaceLight/80 dark:hover:bg-surfaceDark/80 cursor-pointer">
-            <div
-              class="absolute inset-0 bg-gradient-to-br from-zinc-500/0 to-zinc-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-            </div>
-            <h3 class="font-display text-2xl text-zinc-900 dark:text-white transition-colors">NetExecGo</h3>
-            <p class="font-mono text-xs text-textMutedLight dark:text-textMutedDark mt-2">Go</p>
-            <p class="mt-4 text-zinc-600 dark:text-zinc-400 font-light">SOCKS5 proxy CLI tool for network execution and
-              routing.</p>
-          </article>
+          </div>
         </div>
       </section>
-
     </main>
 
-    <!-- Footer -->
-    <footer class="mt-auto py-12 relative border-t border-borderLight dark:border-borderDark">
-      <div
-        class="mx-auto flex w-full flex-col md:flex-row items-center justify-between gap-6 px-6 font-mono text-sm text-textMutedLight dark:text-textMutedDark">
-        <div class="flex flex-wrap justify-center gap-6">
-          <a href="https://scholar.google.com/citations?user=B1SRyKwAAAAJ&hl=en"
-            class="hover:text-accent transition-colors" target="_blank">Google Scholar</a>
-          <a href="https://www.researchgate.net/profile/Aydin-Abedinia-2" class="hover:text-accent transition-colors"
-            target="_blank">ResearchGate</a>
-          <a href="https://orcid.org/0000-0001-9739-7021" class="hover:text-accent transition-colors"
-            target="_blank">ORCID</a>
-          <a href="https://github.com/abedinia" class="hover:text-accent transition-colors" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" class="hover:text-accent transition-colors"
-            target="_blank">LinkedIn</a>
-          <a href="https://x.com/abedinia_aydin" class="hover:text-accent transition-colors" target="_blank">X</a>
-          <a href="https://mastodon.social/@abedinia_aydin" class="hover:text-accent transition-colors"
-            target="_blank">Mastodon</a>
-          <a href="https://medium.com/@abedinia.aydin" class="hover:text-accent transition-colors"
-            target="_blank">Medium</a>
-          <a href="https://www.reddit.com/user/abedinia_aydin/" class="hover:text-accent transition-colors"
-            target="_blank">Reddit</a>
-          <a href="https://stackoverflow.com/users/5637416/aydin-abedinia" class="hover:text-accent transition-colors"
-            target="_blank">StackOverflow</a>
-          <a href="https://www.kaggle.com/abedinia" class="hover:text-accent transition-colors"
-            target="_blank">Kaggle</a>
-          <a href="https://www.xing.com/profile/aydin_abedinia" class="hover:text-accent transition-colors"
-            target="_blank">Xing</a>
+    <footer class="border-t border-white/10 bg-ink-950/55">
+      <div class="mx-auto max-w-6xl px-5 py-10">
+        <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div class="space-y-2">
+            <p class="text-sm text-zinc-400">© <span id="year"></span> Aydin Abedinia</p>
+            <p class="text-sm text-zinc-500">Happy Coding from 127.0.0.1</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 text-sm text-zinc-400">
+            <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">Google Scholar</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">ResearchGate</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">ORCID</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">GitHub</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">LinkedIn</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">X</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">Mastodon</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">Medium</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">Reddit</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">StackOverflow</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">Kaggle</span>
+            <span class="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1">Xing</span>
+          </div>
         </div>
-        <p class="font-sans text-xs uppercase tracking-widest text-zinc-400 dark:text-zinc-600">Happy Coding from
-          127.0.0.1</p>
+
+        <div class="mt-8 flex flex-wrap items-center gap-4 text-sm text-zinc-500">
+          <a href="#top" class="hover:text-zinc-300">Top</a>
+          <a href="#about" class="hover:text-zinc-300">About</a>
+          <a href="#research" class="hover:text-zinc-300">Research</a>
+          <a href="#experience" class="hover:text-zinc-300">Experience</a>
+          <a href="#projects" class="hover:text-zinc-300">Projects</a>
+        </div>
       </div>
     </footer>
 
-  </div>
-</body>
-
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
