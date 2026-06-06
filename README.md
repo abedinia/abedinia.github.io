@@ -1,43 +1,37 @@
-# aydin abedinia — personal site
+# abedinia.github.io
 
-Personal website for [aydin abedinia](https://github.com/abedinia) — ML researcher, MLOps engineer, and Joint PhD student (UniGe · UC3M · QMUL).
+Simple personal static site for Aydin Abedinia.
 
-## stack
+## Overview
 
-Zero build tools. Single file.
+- Static HTML/CSS site with pages: `index.html`, `about.html`, `research.html`, `work.html`, `contact.html`.
+- Includes a small `site.js` used for UI niceties.
 
-- **React 18** + **Babel standalone** loaded from CDN — JSX compiled in-browser
-- **Instrument Serif** + **Geist** + **Geist Mono** via Google Fonts
-- **Google Analytics** (G-9020WB8L7L)
+## Local preview
 
-## usage
-
-Just open `index.html` in a browser. No install, no build step, no server required.
+Open `index.html` in your browser (no build step required):
 
 ```bash
+# from the repo root
 open index.html
 ```
 
-Or serve it with anything static:
+Or serve locally with a simple HTTP server:
 
 ```bash
 python3 -m http.server 8000
-npx serve .
+# then open http://localhost:8000
 ```
 
-## structure
+## Google Analytics
 
-```
-index.html   ← everything lives here
-```
+This site includes Google Analytics (GA4). The measurement ID is `G-3QX5RKQZKW` and the tracking snippet is embedded in each page's `<head>`. To change the ID, update the `gtag('config', '<YOUR_ID>')` call in the HTML files.
 
-## sections
+## Editing
 
-1. Hero
-2. About
-3. Focus — Joint PhD · JD-ICE
-4. Experience
-5. Research / Publications
-6. Expertise
-7. Projects
-8. Footer / Contact
+- Edit the HTML files directly and refresh the browser to see changes.
+
+## Notes
+
+- Email links are `mailto:abedinia@duck.com`.
+- Phone number was removed from the `contact.html` as requested.

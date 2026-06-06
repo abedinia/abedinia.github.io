@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Aydin Abedinia</title>
+<meta name="description" content="Get in touch with Aydin Abedinia — email, GitHub, LinkedIn.">
+<link rel="stylesheet" href="styles.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3QX5RKQZKW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'G-3QX5RKQZKW');
+  </script>
+<style>
+  /* ===== CONTACT ===== */
+  .contact-wrap { min-height: 60vh; }
+
+  .term {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: linear-gradient(180deg, var(--bg-1), var(--bg));
+    overflow: hidden;
+    max-width: 760px;
+    box-shadow: 0 30px 80px -50px var(--accent-glow);
+  }
+  .term__bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 16px;
+    border-bottom: 1px solid var(--line);
+    background: var(--bg-2);
+  }
+  .term__bar .dots { display: flex; gap: 7px; }
+  .term__bar .dots i { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+  .term__bar .dots i:nth-child(1){ background:#ff5f57; }
+  .term__bar .dots i:nth-child(2){ background:#febc2e; }
+  .term__bar .dots i:nth-child(3){ background:#28c840; }
+  .term__bar .ttl { font-size: 12px; color: var(--fg-dim); margin-left: 8px; white-space: nowrap; }
+
+  .term__body { padding: 28px clamp(20px, 4vw, 34px) 34px; font-size: 14px; line-height: 1.9; }
+  .ln { white-space: pre-wrap; }
+  .ln .pfx { color: var(--accent-dim); }
+  .ln .cmd { color: var(--fg); }
+  .ln .out { color: var(--fg-muted); }
+  .ln .key { color: var(--fg-dim); display: inline-block; min-width: 92px; }
+  .ln .val a, .ln .val { color: var(--fg); }
+  .ln .val a { border-bottom: 1px solid transparent; transition: border-color 0.18s, color 0.18s; }
+  .ln .val a:hover { color: var(--accent); border-color: var(--accent-line); }
+  .gap { height: 14px; }
+  .comment { color: var(--fg-dim); }
+  .blink { color: var(--accent); animation: blink 1.15s steps(1) infinite; }
+
+  .contact-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <span class="u">aydin</span><span class="p">@abedinia</span><span class="p">:~$</span><span class="cur"></span>
+    </a>
+    <div class="nav__links">
+      <a href="work.html">work</a>
+      <a href="research.html">research</a>
+      <a href="about.html">about</a>
+      <a href="contact.html">contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head wrap">
+  <span class="eyebrow" data-reveal>contact</span>
+  <h1 data-reveal data-delay="60">Get in touch<span class="accent-cur">_</span></h1>
+  <p data-reveal data-delay="120">
+    Always happy to talk about ML systems, edge inference, or research. The fastest
+    way to reach me is email.
+  </p>
+</header>
+
+<main class="wrap contact-wrap">
+  <div class="section" data-reveal>
+    <div class="term">
+      <div class="term__bar">
+        <span class="dots"><i></i><i></i><i></i></span>
+        <span class="ttl">aydin@abedinia: ~/contact</span>
+      </div>
+      <div class="term__body">
+        <div class="ln"><span class="pfx">$</span> <span class="cmd">cat contact.txt</span></div>
+        <div class="ln out"><span class="key">email</span> <span class="val"><a href="mailto:abedinia@duck.com">abedinia@duck.com</a></span></div>
+        <div class="ln out"><span class="key">github</span> <span class="val"><a href="https://github.com/abedinia" target="_blank" rel="noopener">github.com/abedinia</a></span></div>
+        <div class="ln out"><span class="key">linkedin</span> <span class="val"><a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" target="_blank" rel="noopener">linkedin.com/in/abedinia</a></span></div>
+        <div class="ln out"><span class="key">location</span> <span class="val">Genoa, Italy</span></div>
+        <div class="gap"></div>
+        
+        <!-- <div class="ln"><span class="pfx">$</span> <span class="blink">_</span></div> -->
+      </div>
+    </div>
+
+    <div class="contact-cta">
+      <a class="linkline" href="mailto:abedinia@duck.com">Send an email</a>
+      <a class="linkline ghost" href="research.html">See research</a>
+    </div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <div class="foot__lead">
+      <b>Aydin Abedinia</b> &mdash; Genoa, Italy<br>
+      AI Platform Engineer · PhD Researcher
+    </div>
+    <div class="foot__links">
+      <a href="mailto:abedinia@duck.com">email</a>
+      <a href="https://github.com/abedinia" target="_blank" rel="noopener">github</a>
+      <a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" target="_blank" rel="noopener">linkedin</a>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="site.js"></script>
+</body>
+</html>
