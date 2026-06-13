@@ -4,178 +4,139 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research — Aydin Abedinia</title>
-<meta name="description" content="PhD research on llm, slm, vlm, Vit, edge ai, plus peer-reviewed publications and open-source libraries.">
+<meta name="description" content="PhD research on VLMs, Vision Transformers, and LLMs. Publications in IEEE and Springer. Open-source libraries SemiCART and SemiDeep.">
 <link rel="stylesheet" href="styles.css">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3QX5RKQZKW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} 
-    gtag('js', new Date());
-    gtag('config', 'G-3QX5RKQZKW');
-  </script>
-<style>
-  /* ===== RESEARCH ===== */
-  .phd { padding-bottom: clamp(20px, 5vw, 48px); }
-
-  .phd__head {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 6px 24px;
-    align-items: baseline;
-  }
-  .phd__title { font-size: clamp(1.3rem, 3.6vw, 1.75rem); font-weight: 700; letter-spacing: -0.02em; }
-  .phd__when { font-size: 13px; color: var(--fg-dim); white-space: nowrap; }
-  .phd__org { color: var(--accent-dim); font-size: 13.5px; margin-top: 12px; }
-  .phd__org .x { color: var(--fg-dim); }
-
-  .work-list { list-style: none; margin-top: 26px; display: grid; gap: 16px; }
-  .work-list li {
-    border: 1px solid var(--line);
-    background: linear-gradient(180deg, var(--bg-1), var(--bg));
-    border-radius: 10px;
-    padding: 20px 22px;
-    color: var(--fg-muted);
-    font-size: 14px;
-    line-height: 1.72;
-    max-width: 82ch;
-  }
-  .work-list li b { color: var(--fg); font-weight: 500; }
-  .work-list li .m { color: var(--accent); font-weight: 500; }
-  .work-list li .lead { color: var(--accent-dim); font-size: 12px; display: block; margin-bottom: 8px; letter-spacing: 0.03em; }
-
-  /* publications */
-  .pub { border-top: 1px solid var(--line); padding-top: 26px; margin-top: 26px; }
-  .pub:first-of-type { border-top: none; margin-top: 0; padding-top: 4px; }
-  .pub__meta { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; font-size: 12.5px; color: var(--fg-dim); }
-  .pub__venue { color: var(--accent); }
-  .pub__badge {
-    font-size: 11px; color: var(--accent-dim);
-    border: 1px solid var(--accent-line); border-radius: 5px;
-    padding: 2px 8px;
-  }
-  .pub__title { font-size: 1.12rem; font-weight: 600; letter-spacing: -0.015em; margin-top: 12px; line-height: 1.4; max-width: 72ch; }
-  .pub__title a { transition: color 0.18s var(--ease); }
-  .pub__title a:hover { color: var(--accent); }
-  .pub__title a::after { content: " ↗"; color: var(--fg-dim); font-size: 0.8em; }
-  .pub__note { color: var(--fg-muted); font-size: 13.5px; margin-top: 8px; }
-
-  /* OSS */
-  .oss-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  .oss { display: flex; flex-direction: column; }
-  .oss .top { display: flex; align-items: center; justify-content: space-between; }
-  .oss .repo { font-size: 1.05rem; font-weight: 600; }
-  .oss .repo .sl { color: var(--fg-dim); font-weight: 400; }
-  .oss .arr { color: var(--fg-dim); transition: color 0.2s var(--ease), transform 0.2s var(--ease); }
-  .oss:hover .arr { color: var(--accent); transform: translate(2px,-2px); }
-  .oss p { color: var(--fg-muted); font-size: 13.5px; margin-top: 12px; line-height: 1.7; flex: 1; }
-  .oss .lang { font-size: 12px; color: var(--fg-dim); margin-top: 16px; display: inline-flex; align-items: center; gap: 7px; }
-  .oss .lang::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); display: inline-block; }
-
-  @media (max-width: 620px) {
-    .phd__head { grid-template-columns: 1fr; }
-    .oss-grid { grid-template-columns: 1fr; }
-  }
-</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3QX5RKQZKW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3QX5RKQZKW');</script>
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav__inner">
-    <a class="brand" href="index.html">
-      <span class="u">aydin</span><span class="p">@abedinia</span><span class="p">:~$</span><span class="cur"></span>
-    </a>
+    <a href="index.html" class="nav__brand">Aydin Abedinia</a>
     <div class="nav__links">
       <a href="work.html">work</a>
-      <a href="research.html">research</a>
+      <a href="research.html" class="active">research</a>
       <a href="about.html">about</a>
       <a href="contact.html">contact</a>
     </div>
   </div>
 </nav>
 
-<header class="page-head wrap">
-  <span class="eyebrow" data-reveal>research</span>
-  <h1 data-reveal data-delay="60">Research<span class="accent-cur">_</span></h1>
-  <p data-reveal data-delay="120">
-    Research on SemiSupervised, VLM, LLM.
-  </p>
-</header>
-<main class="wrap">
+<div class="wrap">
+
+  <header class="page-head">
+    <h1>Research</h1>
+    <p>PhD work on Vision-Language Models, Vision Transformers, and Large Language Models at the JD-ICE European doctorate. Earlier research on semi-supervised learning published in IEEE and Springer.</p>
+  </header>
+
+  <!-- PhD -->
+  <section class="section">
+    <div class="section-label">01 &middot; phd research</div>
+
+    <div class="job">
+      <div class="job__head">
+        <span class="job__co">Joint Doctorate JD-ICE</span>
+        <span class="job__when">Nov 2025 &ndash; Present</span>
+      </div>
+      <div class="job__ctx">UniGe (IT) &middot; UC3M (ES) &middot; QMUL (UK)</div>
+      <p class="role-note" style="margin-top:12px;">
+        Research on <b style="color:var(--fg)">Vision-Language Models (VLM)</b>,
+        <b style="color:var(--fg)">Vision Transformers (ViT)</b>, and
+        <b style="color:var(--fg)">Large Language Models (LLM)</b> &mdash;
+        with emphasis on hardware-aware inference, precision trade-offs, and real-time edge
+        deployment for resource-constrained environments.
+      </p>
+      <div class="chips">
+        <span class="chip">VLM</span>
+        <span class="chip">ViT</span>
+        <span class="chip">LLM</span>
+        <span class="chip">Edge Inference</span>
+        <span class="chip">QLoRA</span>
+        <span class="chip">FP16 / INT8</span>
+      </div>
+    </div>
+  </section>
 
   <!-- Publications -->
-  <section class="section" data-reveal>
-    <div class="section__label"><span class="n">02</span> publications</div>
+  <section class="section">
+    <div class="section-label">02 &middot; publications</div>
 
-    <div class="pub">
-      <div class="pub__meta">
-        <span class="pub__venue">IEEE ICMLT 2025</span>
-        <span class="pub__badge">oral · Helsinki</span>
+    <div class="scholar-strip">
+      <div class="scholar-stat">
+        <div class="v">30<span class="u">+</span></div>
+        <div class="k">citations</div>
       </div>
-      <h3 class="pub__title">
-        <a href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener">Distance-Based Sample Weights in Semi-Supervised Deep Learning</a>
-      </h3>
-      <p class="pub__note">Published in IEEE Xplore.</p>
+      <div class="scholar-stat">
+        <div class="v">1</div>
+        <div class="k">h-index</div>
+      </div>
+      <div class="scholar-stat">
+        <div class="v">1</div>
+        <div class="k">i10-index</div>
+      </div>
     </div>
 
     <div class="pub">
-      <div class="pub__meta">
-        <span class="pub__venue">Springer IJMLC 2024</span>
-        <span class="pub__badge">+27 citations</span>
+      <div class="pub__venue">IEEE ICMLT 2025 &middot; oral &middot; Helsinki</div>
+      <div class="pub__title">
+        <a href="https://ieeexplore.ieee.org/" target="_blank" rel="noopener">
+          Enhancing Classification with Semi-Supervised Deep Learning Using Distance-Based Sample Weights ↗
+        </a>
       </div>
-      <h3 class="pub__title">
-        <a href="https://link.springer.com/" target="_blank" rel="noopener">Building Semi-Supervised Decision Trees with Semi-CART</a>
-      </h3>
-      <p class="pub__note">International Journal of Machine Learning and Cybernetics.</p>
+      <div class="pub__note">Published in IEEE Xplore. Co-authors: S. Tabakhi, V. Seydi. 2025 ICMLT.</div>
+    </div>
+
+    <div class="pub">
+      <div class="pub__venue">Springer IJMLC 2024 &middot; 29 citations</div>
+      <div class="pub__title">
+        <a href="https://link.springer.com/article/10.1007/s13042-024-02124-4" target="_blank" rel="noopener">
+          Building Semi-Supervised Decision Trees with Semi-CART Algorithm ↗
+        </a>
+      </div>
+      <div class="pub__note">
+        International Journal of Machine Learning and Cybernetics, Vol. 15(10), pp. 4493–4510. Co-author: V. Seydi.
+        Reference implementation: <a href="https://github.com/abedinia/SemiCART" target="_blank" rel="noopener" style="color:var(--accent)">SemiCART</a>.
+      </div>
+    </div>
+
+    <div style="margin-top:16px;">
+      <a href="https://scholar.google.com/citations?user=B1SRyKwAAAAJ&hl=en" target="_blank" rel="noopener" style="font-size:13px;color:var(--accent)">
+        View on Google Scholar ↗
+      </a>
     </div>
   </section>
 
-  <!-- OSS -->
-  <section class="section" data-reveal>
-    <div class="section__label"><span class="n">03</span> open source</div>
-    <p class="job__ctx" style="margin-bottom:24px;max-width:64ch;">
-      Python libraries implementing the published semi-supervised research.
-    </p>
+  <!-- Open Source -->
+  <section class="section">
+    <div class="section-label">03 &middot; open source</div>
     <div class="oss-grid">
-      <a class="card oss" href="https://github.com/abedinia" target="_blank" rel="noopener" data-reveal>
-        <div class="top">
-          <span class="repo"><span class="sl">~/</span>SemiCART</span>
-          <span class="arr">↗</span>
-        </div>
-        <p>Semi-supervised decision trees with distance-based sample weighting &mdash; the reference implementation of the Semi-CART paper.</p>
-        <span class="lang">Python</span>
+      <a href="https://github.com/abedinia/SemiCART" target="_blank" rel="noopener" class="oss-card">
+        <div class="name">~/SemiCART</div>
+        <p>Semi-supervised decision trees with distance-based sample weighting — reference implementation of the Semi-CART paper (Springer IJMLC 2024, 29 citations).</p>
+        <div class="lang">Python</div>
       </a>
-      <a class="card oss" href="https://github.com/abedinia" target="_blank" rel="noopener" data-reveal data-delay="80">
-        <div class="top">
-          <span class="repo"><span class="sl">~/</span>SemiDeep</span>
-          <span class="arr">↗</span>
-        </div>
-        <p>Distance-based sample weights for semi-supervised deep learning, implementing the ICMLT 2025 method.</p>
-        <span class="lang">Python</span>
+      <a href="https://github.com/abedinia/SemiDeep" target="_blank" rel="noopener" class="oss-card">
+        <div class="name">~/SemiDeep</div>
+        <p>Distance-based sample weights for semi-supervised deep learning, implementing the method from the IEEE ICMLT 2025 oral presentation.</p>
+        <div class="lang">Python</div>
       </a>
     </div>
   </section>
 
-  <div class="section" data-reveal>
-    <a class="linkline" href="about.html">More about me</a>
-  </div>
-
-</main>
+</div>
 
 <footer class="foot">
   <div class="wrap foot__inner">
-    <div class="foot__lead">
-      <b>Aydin Abedinia</b> &mdash; Genoa, Italy<br>
-      AI Platform Engineer · PhD Researcher
-    </div>
+    <div class="foot__lead"><b>Aydin Abedinia</b> &mdash; AI platform &amp; backend engineer</div>
     <div class="foot__links">
-      <a href="mailto:abedinia@duck.com">email</a>
-      <a href="https://github.com/abedinia" target="_blank" rel="noopener">github</a>
-      <a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://github.com/abedinia" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=B1SRyKwAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
     </div>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="site.js"></script>
+<script src="site.js"></script>
 </body>
 </html>

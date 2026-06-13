@@ -4,205 +4,133 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Aydin Abedinia</title>
-<meta name="description" content="About Aydin Abedinia — technical skills, education, and background in AI platform engineering and research.">
+<meta name="description" content="About Aydin Abedinia — AI platform and backend engineer. Skills and education.">
 <link rel="stylesheet" href="styles.css">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3QX5RKQZKW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} 
-    gtag('js', new Date());
-    gtag('config', 'G-3QX5RKQZKW');
-  </script>
-<style>
-  /* ===== ABOUT ===== */
-  .bio { max-width: 70ch; }
-  .bio p { color: var(--fg-muted); font-size: 15px; line-height: 1.9; margin-top: 18px; }
-  .bio p:first-child { margin-top: 0; }
-  .bio p b { color: var(--fg); font-weight: 500; }
-  .bio p .m { color: var(--accent); font-weight: 500; }
-
-  /* skills */
-  .skills { display: grid; gap: 2px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
-  .skillrow {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 16px 28px;
-    padding: 20px 24px;
-    background: var(--bg-1);
-    align-items: start;
-  }
-  .skillrow .label { font-size: 13px; color: var(--accent-dim); display: flex; align-items: baseline; gap: 8px; }
-  .skillrow .label::before { content: ">"; color: var(--fg-dim); }
-  .skillrow .vals { display: flex; flex-wrap: wrap; gap: 8px; }
-  .skillrow .vals span {
-    font-size: 13px;
-    color: var(--fg-muted);
-    background: var(--bg-2);
-    border: 1px solid var(--line);
-    padding: 5px 11px;
-    border-radius: 6px;
-  }
-
-  /* two-col */
-  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-  .info h3 { font-size: 1.02rem; font-weight: 600; margin-bottom: 4px; }
-  .info .sub { color: var(--fg-dim); font-size: 12.5px; }
-  .info .meta { color: var(--accent-dim); font-size: 12px; margin-top: 8px; }
-  .info + .info { margin-top: 20px; }
-
-  .langbar { display: flex; flex-direction: column; gap: 18px; }
-  .lang2 { }
-  .lang2 .row { display: flex; justify-content: space-between; align-items: baseline; font-size: 14px; }
-  .lang2 .row .name { color: var(--fg); font-weight: 500; }
-  .lang2 .row .lvl { color: var(--fg-dim); font-size: 12.5px; }
-  .lang2 .track { height: 4px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 99px; margin-top: 10px; overflow: hidden; }
-  .lang2 .fill { height: 100%; background: linear-gradient(90deg, var(--accent-dim), var(--accent)); border-radius: 99px; }
-
-  @media (max-width: 680px) {
-    .skillrow { grid-template-columns: 1fr; gap: 12px; }
-    .two { grid-template-columns: 1fr; }
-  }
-</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3QX5RKQZKW"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3QX5RKQZKW');</script>
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav__inner">
-    <a class="brand" href="index.html">
-      <span class="u">aydin</span><span class="p">@abedinia</span><span class="p">:~$</span><span class="cur"></span>
-    </a>
+    <a href="index.html" class="nav__brand">Aydin Abedinia</a>
     <div class="nav__links">
       <a href="work.html">work</a>
       <a href="research.html">research</a>
-      <a href="about.html">about</a>
+      <a href="about.html" class="active">about</a>
       <a href="contact.html">contact</a>
     </div>
   </div>
 </nav>
 
-<header class="page-head wrap">
-  <span class="eyebrow" data-reveal>about</span>
-  <h1 data-reveal data-delay="60">About<span class="accent-cur">_</span></h1>
-</header>
+<div class="wrap">
 
-<main class="wrap">
+  <header class="page-head">
+    <h1>About</h1>
+  </header>
 
-  <section class="section" data-reveal>
-    <div class="bio">
+  <!-- Bio -->
+  <section class="section" style="border-top:none;padding-top:0;">
+    <div style="max-width:60ch;color:var(--muted);font-size:14.5px;line-height:1.8;display:grid;gap:14px;">
       <p>
-        I&rsquo;m an <b>AI and backend software engineer</b> with eight years building
-        production ML systems and distributed services in Python and Go. I&rsquo;ve
-        delivered model-serving platforms, real-time feature stores, and agentic AI
-        workflows &mdash; owned end to end from architecture to on-call.
+        I'm an <b style="color:var(--fg)">AI platform and backend engineer</b> with eight years building
+        production ML systems and distributed services in Python and Go — model-serving platforms,
+        real-time feature stores, and multi-agent AI workflows, owned end to end from architecture to on-call.
       </p>
       <p>
-        At Snapp I founded and scaled an <b>11-engineer AI-platform organization</b>
-        serving <span class="m">50M+ users</span>, and earlier re-architected the backend
-        that carried the company from regional service to national leader. I care about
-        the unglamorous parts &mdash; API contracts, observability, release workflows &mdash;
-        that let teams ship ML reliably at scale.
+        At Snapp I founded and scaled an <b style="color:var(--fg)">11-engineer AI-platform organization</b>
+        serving 50M+ users, drove an A/B-tested dispatch rollout that added ~100k rides/day,
+        and built the Go inference gateways and feature store that held latency to
+        sub-50ms p99 across 20M daily inferences.
+        Earlier I re-architected the backend that carried the company from regional service
+        to national leader through ~10× user growth.
       </p>
       <p>
-        Now I&rsquo;m a <b>PhD researcher</b> focusing on llm, slm, vlm, Vit, edge ai.
+        Now I'm a <b style="color:var(--fg)">PhD researcher</b> at the JD-ICE joint European doctorate
+        (UniGe &middot; UC3M &middot; QMUL), studying Vision-Language Models and hardware-aware inference
+        for real-time autonomous-driving edge deployments.
       </p>
     </div>
   </section>
 
   <!-- Skills -->
-  <section class="section" data-reveal>
-    <div class="section__label"><span class="n">01</span> technical skills</div>
-    <div class="skills">
-      <div class="skillrow">
-        <div class="label">languages</div>
-        <div class="vals">
-          <span>Python</span><span>Go</span><span>SQL</span><span>Bash</span>
+  <section class="section">
+    <div class="section-label">01 &middot; technical skills</div>
+    <div class="skill-grid">
+      <div class="skill-row">
+        <div class="skill-label">Languages</div>
+        <div class="skill-vals">
+          <span class="chip">Python</span><span class="chip">Go</span><span class="chip">SQL</span><span class="chip">Bash</span>
         </div>
       </div>
-      <div class="skillrow">
-        <div class="label">ai serving &amp; mlops</div>
-        <div class="vals">
-          <span>vLLM</span><span>Ollama</span><span>TFServe</span><span>FastAPI</span>
-          <span>Fine-tuning</span><span>Quantization</span><span>MLflow</span>
-          <span>Weights &amp; Biases</span><span>Airflow</span>
+      <div class="skill-row">
+        <div class="skill-label">LLM &amp; Agentic AI</div>
+        <div class="skill-vals">
+          <span class="chip">Multi-agent</span><span class="chip">Tool-calling</span><span class="chip">RAG</span><span class="chip">GraphRAG</span>
         </div>
       </div>
-      <div class="skillrow">
-        <div class="label">agentic ai &amp; llm</div>
-        <div class="vals">
-          <span>Multi-agent orchestration</span><span>Tool-calling pipelines</span>
-          <span>RAG &amp; GraphRAG</span><span>CrewAI</span>
+      <div class="skill-row">
+        <div class="skill-label">LLM Serving</div>
+        <div class="skill-vals">
+          <span class="chip">vLLM</span><span class="chip">Ollama</span><span class="chip">Hugging Face</span><span class="chip">Fine-tuning</span><span class="chip">QLoRA</span><span class="chip">MLflow</span><span class="chip">Airflow</span>
         </div>
       </div>
-      <div class="skillrow">
-        <div class="label">backend &amp; distributed</div>
-        <div class="vals">
-          <span>Microservices</span><span>REST</span><span>gRPC</span>
-          <span>Event-driven</span><span>Redis</span><span>Kafka</span><span>NATS</span>
+      <div class="skill-row">
+        <div class="skill-label">VLM &amp; Vision</div>
+        <div class="skill-vals">
+          <span class="chip">Vision Transformers</span><span class="chip">VLM</span><span class="chip">FP16 / INT8</span><span class="chip">Edge Inference</span>
         </div>
       </div>
-      <div class="skillrow">
-        <div class="label">data &amp; cloud</div>
-        <div class="vals">
-          <span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>Kubernetes</span>
-          <span>Docker</span><span>AWS</span><span>GitLab CI/CD</span>
-          <span>Prometheus</span><span>Grafana</span>
+      <div class="skill-row">
+        <div class="skill-label">Backend</div>
+        <div class="skill-vals">
+          <span class="chip">Microservices</span><span class="chip">REST</span><span class="chip">gRPC</span><span class="chip">Event-driven</span><span class="chip">Redis</span><span class="chip">Kafka</span><span class="chip">NATS</span>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Education + Languages -->
-  <section class="section" data-reveal>
-    <div class="two">
-      <div>
-        <div class="section__label" style="border-top:none;padding-top:0;"><span class="n">02</span> education</div>
-        <div class="info">
-          <h3>MSc, Software Engineering</h3>
-          <div class="sub">IAU, South Tehran Branch</div>
-          <div class="meta">2014 — 2018</div>
-        </div>
-        <div class="info">
-          <h3>BSc, Software Engineering</h3>
-          <div class="sub">IAU, Kashan Branch</div>
-          <div class="meta">2008 — 2013</div>
-        </div>
-      </div>
-
-      <div>
-        <div class="section__label" style="border-top:none;padding-top:0;"><span class="n">03</span> languages</div>
-        <div class="langbar">
-            <div class="lang2">
-              <div class="row"><span class="name">English</span><span class="lvl">professional</span></div>
-            </div>
-            <div class="lang2">
-              <div class="row"><span class="name">Persian</span><span class="lvl">native</span></div>
-            </div>
+      <div class="skill-row">
+        <div class="skill-label">Infra &amp; Cloud</div>
+        <div class="skill-vals">
+          <span class="chip">Kubernetes</span><span class="chip">Docker</span><span class="chip">AWS</span><span class="chip">GitLab CI/CD</span><span class="chip">Prometheus</span><span class="chip">Grafana</span>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="section" data-reveal>
-    <a class="linkline" href="contact.html">Get in touch</a>
-  </div>
+  <!-- Education -->
+  <section class="section">
+    <div class="section-label">02 &middot; education</div>
+    <div class="edu-list">
+      <div class="edu-item">
+        <div class="degree">PhD, Joint Doctorate JD-ICE</div>
+        <div class="school">UniGe (IT) &middot; UC3M (ES) &middot; QMUL (UK)</div>
+        <div class="year">2025 &ndash; Present</div>
+      </div>
+      <div class="edu-item">
+        <div class="degree">MSc, Software Engineering</div>
+        <div class="school">IAU, South Tehran Branch</div>
+        <div class="year">2014 &ndash; 2018</div>
+      </div>
+      <div class="edu-item">
+        <div class="degree">BSc, Software Engineering</div>
+        <div class="school">IAU, Kashan Branch</div>
+        <div class="year">2008 &ndash; 2013</div>
+      </div>
+    </div>
+  </section>
 
-</main>
+</div>
 
 <footer class="foot">
   <div class="wrap foot__inner">
-    <div class="foot__lead">
-      <b>Aydin Abedinia</b> &mdash; Genoa, Italy<br>
-      AI Platform Engineer · PhD Researcher
-    </div>
+    <div class="foot__lead"><b>Aydin Abedinia</b> &mdash; AI platform &amp; backend engineer</div>
     <div class="foot__links">
-      <a href="mailto:abedinia@duck.com">email</a>
-      <a href="https://github.com/abedinia" target="_blank" rel="noopener">github</a>
-      <a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" target="_blank" rel="noopener">linkedin</a>
+      <a href="https://github.com/abedinia" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=B1SRyKwAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
     </div>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="site.js"></script>
+<script src="site.js"></script>
 </body>
 </html>
