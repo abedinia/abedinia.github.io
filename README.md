@@ -66,6 +66,14 @@ sips -Z 1400 original.jpeg --out image/icmlt2025/talk.jpg
 
 ## Notes
 
-No analytics and no tracking scripts are loaded. The published email is
+Google Analytics (GA4), measurement ID `G-9020WB8L7L`, is inlined at the end of
+`index.html`'s `<head>` — the only third-party request the site makes. The
+redirect stubs are deliberately untagged so a bounce through them is not counted
+twice.
+
+The tag is gated on hostname: it only loads when `location.hostname` is in the
+`HOSTS` allowlist in that snippet. Forks, local previews and `file://` opens load
+no analytics at all. If you add a custom domain, add it to `HOSTS` or the site
+will stop reporting. The published email is
 `abedinia@duck.com`. The site names the UniGe / DITEN affiliation but not a
 postal address.
