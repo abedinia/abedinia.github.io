@@ -1,104 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aydin Abedinia — AI Platform &amp; Backend Engineer</title>
-<meta name="description" content="Aydin Abedinia — AI platform and backend engineer. 8 years building production ML systems at scale. PhD researcher on VLMs and edge inference.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aydin Abedinia</title>
+<meta name="description" content="Aydin Abedinia — AI/ML researcher and engineer in Genoa, Italy. Research on edge AI: hardware-aware inference, quantisation and vision–language models. Practice in MLOps, LLMOps and AI platform engineering.">
+<meta name="author" content="Aydin Abedinia">
+<link rel="canonical" href="https://abedinia.github.io/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Aydin Abedinia">
+<meta property="og:description" content="AI/ML researcher and engineer. Edge AI, hardware-aware inference and quantisation; MLOps and AI platform engineering.">
+<meta property="og:url" content="https://abedinia.github.io/">
+<meta property="og:image" content="https://abedinia.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#fdfcfa">
+
+<link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3QX5RKQZKW"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-3QX5RKQZKW');</script>
+<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Aydin Abedinia",
+  "url": "https://abedinia.github.io/",
+  "jobTitle": "AI/ML Researcher and Engineer",
+  "email": "mailto:abedinia@duck.com",
+  "address": {"@type": "PostalAddress", "addressLocality": "Genoa", "addressCountry": "IT"},
+  "affiliation": {"@type": "CollegeOrUniversity", "name": "Università degli Studi di Genova"},
+  "knowsAbout": ["Edge AI", "On-device inference", "Quantisation", "Vision-language models", "MLOps", "LLMOps", "Machine learning platforms"],
+  "sameAs": [
+    "https://github.com/abedinia",
+    "https://www.linkedin.com/in/aydin-abedinia-96b2276b/",
+    "https://scholar.google.com/citations?user=B1SRyKwAAAAJ&hl=en",
+    "https://orcid.org/0000-0001-9739-7021",
+    "https://medium.com/@abedinia.aydin"
+  ]
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<nav class="nav">
-  <div class="nav__inner">
-    <span class="nav__brand">Aydin Abedinia</span>
-    <div class="nav__links">
-      <a href="work.html">work</a>
-      <a href="research.html">research</a>
-      <a href="about.html">about</a>
-      <a href="contact.html">contact</a>
-    </div>
-  </div>
-</nav>
+<header class="top">
+  <span class="top__name">Aydin Abedinia</span>
+  <nav class="top__nav" aria-label="Sections">
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" class="top__toggle" type="button" aria-label="Switch between light and dark">
+    <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.3"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/></svg>
+    <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+  </button>
+</header>
 
-<div class="wrap">
+<main id="main">
 
-  <header class="hero">
-    <div class="hero__name">Aydin Abedinia</div>
-    <div class="hero__role">AI Platform &amp; Backend Engineer &mdash; Genoa, Italy</div>
-    <p class="hero__lede">
-      Eight years building production ML systems and distributed services in <b>Python and Go</b>
-      model-serving platforms, real-time feature stores, and multi-agent AI workflows.
-      Currently a <b>PhD researcher</b> at the JD-ICE European doctorate
-      (UniGe &middot; UC3M &middot; QMUL) studying Vision-Language Models and
-      hardware-aware inference.
+  <section class="intro">
+    <h1>Aydin Abedinia</h1>
+    <p class="intro__role">AI/ML researcher and engineer · Genoa, Italy</p>
+    <p>
+      I work on making machine learning models run well on real hardware. My research is on
+      <strong>edge AI</strong> — hardware-aware inference, quantisation, and vision–language models
+      under tight latency, memory and energy budgets. I am a PhD researcher at the
+      <a href="https://github.com/Elios-Lab" rel="noopener">Elios Lab</a>, DITEN, University of Genoa,
+      in the JD-ICE joint doctorate with Universidad Carlos III de Madrid and Queen Mary University of London.
     </p>
-    <div class="hero__links">
-      <a href="work.html">Experience →</a>
-      <a href="research.html">Research →</a>
-      <a href="https://github.com/abedinia" target="_blank" rel="noopener">GitHub ↗</a>
-      <a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <p>
+      Before that I spent eight years at <strong>Snapp</strong>, Iran's largest ride-hailing platform,
+      most recently as Senior Engineering Manager for Backend &amp; AI Platform. My engineering work is
+      <strong>MLOps, LLMOps and AI platform</strong>: model serving, feature stores, deployment
+      automation, and the observability that keeps ML systems honest in production.
+    </p>
+    <ul class="links">
+      <li><a href="mailto:abedinia@duck.com">Email</a></li>
+      <li><a href="https://scholar.google.com/citations?user=B1SRyKwAAAAJ&hl=en" rel="me noopener">Google Scholar</a></li>
+      <li><a href="https://github.com/abedinia" rel="me noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" rel="me noopener">LinkedIn</a></li>
+      <li><a href="https://orcid.org/0000-0001-9739-7021" rel="me noopener">ORCID</a></li>
+    </ul>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <p>
+      The thread through my work is getting reliable intelligence out of constrained resources.
+      It started with scarce labels — semi-supervised learning — and now runs through scarce compute:
+      what survives when a model has to answer inside a latency budget, on a device, next to a person
+      or a vehicle.
+    </p>
+    <ul class="bullets">
+      <li>Hardware-aware inference for vision transformers and vision–language models</li>
+      <li>Quantisation trade-offs (FP32 / FP16 / INT8) and what they actually cost in accuracy</li>
+      <li>On-device generative pipelines — speech-to-text → language model → text-to-speech on Jetson, Raspberry Pi and STM32MP2</li>
+      <li>Real-time driving-scenario video understanding, benchmarked across NVIDIA H100 and Jetson Orin Nano</li>
+      <li>Semi-supervised learning: distance-based sample weighting for trees and deep networks</li>
+    </ul>
+    <dl class="facts">
+      <dt>Programme</dt><dd>JD-ICE — Joint Doctorate in Interactive and Cognitive Environments (cycle XLI)</dd>
+      <dt>Host lab</dt><dd>Elios Lab, DITEN, Università degli Studi di Genova</dd>
+      <dt>Partners</dt><dd>Universidad Carlos III de Madrid · Queen Mary University of London</dd>
+      <dt>Supervisors</dt><dd>Francesco Bellotti · Riccardo Berta</dd>
+      <dt>Period</dt><dd>Nov 2025 – 2028 (expected)</dd>
+    </dl>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <article class="pub">
+      <h3><a href="https://www.sciencedirect.com/science/article/pii/S1383762126002997" rel="noopener">Cross-platform deployment and characterization of an on-device generative conversational agent</a></h3>
+      <p class="pub__authors">P. Firpo, R. Berta, F. Bellotti, L. Lazzaroni, M. Fresta, A. Pighetti, <b>A. Abedinia</b>, N. Yoonesi, D. P. Pau</p>
+      <p class="pub__meta"><em>Journal of Systems Architecture</em> · Elsevier · 2026</p>
+      <p class="pub__note">A fully local speech-to-text → language-model → text-to-speech pipeline (Moonshine, Piper, and four quantised LMs from 1.2B to 8B parameters), deployed on an NVIDIA Jetson AGX Orin, a Raspberry Pi 5 and an STM32MP257F-EV1, and characterised on thermostat and washing-machine use cases.</p>
+    </article>
+
+    <article class="pub">
+      <h3>An open-source FPGA framework for extremely quantized edge AI</h3>
+      <p class="pub__authors">H. Ballout, R. Berta, A. Saad, L. Lazzaroni, O. Srour, M. Fresta, <b>A. Abedinia</b>, F. Bellotti</p>
+      <p class="pub__meta">SIE 2026 · Springer <span class="badge">Accepted</span></p>
+    </article>
+
+    <article class="pub">
+      <h3><a href="https://arxiv.org/abs/2505.14345" rel="noopener">Enhancing classification with semi-supervised deep learning using distance-based sample weights</a></h3>
+      <p class="pub__authors"><b>A. Abedinia</b>, S. Tabakhi, V. Seydi</p>
+      <p class="pub__meta">10th International Conference on Machine Learning Technologies (ICMLT) · IEEE · Helsinki, 2025 · oral</p>
+      <p class="pub__note">Weights training samples by their distance to the test distribution, down-weighting noisy and out-of-distribution examples. Helps most when labels are few or classes are imbalanced.</p>
+      <p class="pub__links"><a href="https://arxiv.org/abs/2505.14345" rel="noopener">arXiv</a> <a href="https://github.com/WeightedAI/semideep" rel="noopener">Code</a> <a href="https://pypi.org/project/semideep/" rel="noopener">PyPI</a> <a href="https://medium.com/@abedinia.aydin/making-ai-smarter-with-less-the-magic-of-distance-based-sample-weights-in-deep-learning-44b3662e31a7" rel="noopener">Write-up</a></p>
+    </article>
+
+    <article class="pub">
+      <h3><a href="https://doi.org/10.1007/s13042-024-02161-z" rel="noopener">Building semi-supervised decision trees with semi-CART algorithm</a></h3>
+      <p class="pub__authors"><b>A. Abedinia</b>, V. Seydi</p>
+      <p class="pub__meta"><em>International Journal of Machine Learning and Cybernetics</em> · Springer · 15(10), 4493–4510, 2024</p>
+      <p class="pub__note">Extends CART so unlabeled data shapes the split criterion, through sample weights derived from the distance between labeled and unlabeled instances.</p>
+      <p class="pub__links"><a href="https://doi.org/10.1007/s13042-024-02161-z" rel="noopener">DOI</a> <a href="https://github.com/WeightedAI/semicart" rel="noopener">Code</a> <a href="https://pypi.org/project/semicart/" rel="noopener">PyPI</a></p>
+    </article>
+
+    <p class="more"><a href="https://scholar.google.com/citations?user=B1SRyKwAAAAJ&hl=en" rel="noopener">All publications on Google Scholar →</a></p>
+  </section>
+
+  <section id="icmlt">
+    <h2>ICMLT 2025, Helsinki</h2>
+    <p>
+      I presented <em>Enhancing classification with semi-supervised deep learning using distance-based
+      sample weights</em> as an oral talk at the 10th International Conference on Machine Learning
+      Technologies, 23–25 May 2025. The reference implementation went up on PyPI as
+      <code>semideep</code> during the session.
+    </p>
+    <figure class="shot">
+      <img src="image/icmlt2025/talk.jpg" width="1400" height="1023" loading="lazy" decoding="async"
+           alt="Presenting the SemiDeep paper at ICMLT 2025, with the semideep PyPI page projected on screen.">
+      <figcaption>Presenting the paper — the freshly released <code>semideep</code> package on screen.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="image/icmlt2025/group.jpg" width="1000" height="382" loading="lazy" decoding="async"
+           alt="Group photo of ICMLT 2025 and CCCE 2025 attendees in the conference room in Helsinki.">
+      <figcaption>Conference group photo, ICMLT / CCCE 2025.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="image/icmlt2025/certificate.jpg" width="1200" height="852" loading="lazy" decoding="async"
+           alt="ICMLT 2025 certificate of completion issued to Aydin Abedinia for presenting the paper.">
+      <figcaption>Certificate of presentation, sponsored by IEEE.</figcaption>
+    </figure>
+  </section>
+
+  <section id="code">
+    <h2>Open source</h2>
+    <p>The published methods ship with installable implementations.</p>
+    <ul class="repos">
+      <li>
+        <a href="https://github.com/WeightedAI/semideep" rel="noopener">semideep</a>
+        <span class="repos__lang">Python</span>
+        <p>Distance-based sample weighting for semi-supervised deep learning. Companion to the ICMLT paper. <code>pip install semideep</code></p>
+      </li>
+      <li>
+        <a href="https://github.com/WeightedAI/semicart" rel="noopener">semicart</a>
+        <span class="repos__lang">Python</span>
+        <p>Semi-CART: semi-supervised decision trees with distance-based weights. Companion to the IJMLC paper. <code>pip install semicart</code></p>
+      </li>
+      <li>
+        <a href="https://github.com/abedinia/cartgo" rel="noopener">cartgo</a>
+        <span class="repos__lang">Go</span>
+        <p>CART in Go — fit, predict, save, load — for low-latency serving paths.</p>
+      </li>
+      <li>
+        <a href="https://github.com/abedinia/rust_decision_tree" rel="noopener">rust_decision_tree</a>
+        <span class="repos__lang">Rust</span>
+        <p>Decision trees written from scratch in Rust, to see what tree learning costs when you control the memory layout.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="row">
+      <div class="row__when">Nov 2025 — present</div>
+      <div class="row__what">
+        <h3>Doctoral Researcher</h3>
+        <p class="row__org">Elios Lab, DITEN — Università degli Studi di Genova</p>
+        <p>Hardware-aware benchmarking of visual backbones for real-time video understanding on H100 and
+           Jetson Orin Nano; quantisation trade-offs in throughput, accuracy and energy. Benchmark harness
+           released as open source.</p>
+      </div>
     </div>
 
-    <div class="stats">
-      <div class="stat">
-        <div class="v">50M<span class="u">+</span></div>
-        <div class="k">users served by AI features</div>
-      </div>
-      <div class="stat">
-        <div class="v">20M<span class="u">/day</span></div>
-        <div class="k">inferences at sub-50ms p99</div>
-      </div>
-      <div class="stat">
-        <div class="v">8<span class="u">yr</span></div>
-        <div class="k">production ML &amp; backend</div>
-      </div>
-      <div class="stat">
-        <div class="v">3<span class="u">×</span></div>
-        <div class="k">universities · JD-ICE doctorate</div>
+    <div class="row">
+      <div class="row__when">Apr 2017 — Jun 2025</div>
+      <div class="row__what">
+        <h3>Snapp</h3>
+        <p class="row__org">Tehran, Iran — ride-hailing platform, 50M+ registered users</p>
+        <ul class="roles">
+          <li><span>Senior Engineering Manager — Backend &amp; AI Platform</span><i>2023 — 2025</i></li>
+          <li><span>Engineering Manager — AI / ML Platform</span><i>2022 — 2023</i></li>
+          <li><span>Technical Specialist — Machine Learning &amp; Backend</span><i>2019 — 2022</i></li>
+          <li><span>Senior Software Engineer — Backend</span><i>2017 — 2019</i></li>
+        </ul>
+        <ul class="bullets">
+          <li>Founded and led an 11-engineer AI Platform team owning the ML infrastructure behind the product, on-call included.</li>
+          <li>Built the online/offline feature store and inference gateway serving roughly 80M predictions a day at sub-50 ms p99.</li>
+          <li>Standardised model deployment: Kubernetes and Helm across datacentres, CI/CD with GitLab CI and GitHub Actions, Terraform rollouts, staged releases with validation gates.</li>
+          <li>Migrated high-traffic PHP services to event-driven Go on NATS, holding p99 steady through roughly 10× user growth.</li>
+        </ul>
       </div>
     </div>
-  </header>
 
-  <section class="section">
-    <div class="section-label">what i work on</div>
-    <div class="focus-grid">
-      <a class="focus-card" href="research.html">
-        <h3>Vision-Language &amp; Edge AI</h3>
-        <p>Research on VLMs, Vision Transformers, and LLMs — hardware-aware inference for real-time edge deployments.</p>
-        <div class="meta">VLM · ViT · LLM · edge inference</div>
-      </a>
-      <a class="focus-card" href="work.html">
-        <h3>Agentic AI &amp; LLM Systems</h3>
-        <p>Multi-agent orchestration, tool-calling pipelines, RAG / GraphRAG on production serving infrastructure.</p>
-        <div class="meta">vLLM · multi-agent · GraphRAG</div>
-      </a>
-      <a class="focus-card" href="work.html">
-        <h3>AI Platform &amp; MLOps</h3>
-        <p>Model-serving platforms, real-time feature stores, and end-to-end MLOps pipelines at scale.</p>
-        <div class="meta">feature store · MLOps · k8s</div>
-      </a>
-      <a class="focus-card" href="work.html">
-        <h3>Distributed Backend Systems</h3>
-        <p>Event-driven microservices in Go and Python holding p99 latency stable through ~10× user growth.</p>
-        <div class="meta">Go · gRPC · NATS / Kafka</div>
-      </a>
+    <div class="row">
+      <div class="row__when">Sep 2016 — Apr 2017</div>
+      <div class="row__what">
+        <h3>Senior Software Engineer — Backend</h3>
+        <p class="row__org">GSM Group — Tehran, Iran</p>
+        <p>Backend and data services for telecom products in Django, PHP and MySQL; query tuning,
+           indexing and a Redis cache layer cut execution time on high-frequency APIs by about 60%.</p>
+      </div>
+    </div>
+
+    <h3 class="sub">Teaching &amp; mentoring</h3>
+    <div class="row">
+      <div class="row__when">2026</div>
+      <div class="row__what">
+        <h3>Instructor — Agentic AI Mini-Camp</h3>
+        <p class="row__org">Quera</p>
+        <p>Project-based course on building AI agents rather than prompting models: RAG and vector
+           databases, orchestration, tool design, memory, and human-in-the-loop workflows.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row__when">2026 — present</div>
+      <div class="row__what">
+        <h3>Mentor</h3>
+        <p class="row__org"><a href="https://adplist.org/mentors/aydin-abedinia-mrt06exd" rel="noopener">ADPList</a></p>
+        <p>Free 1:1 sessions on backend and ML system design, Kubernetes and model serving, and career
+           direction for engineers moving toward senior and lead roles.</p>
+      </div>
+    </div>
+
+    <h3 class="sub">Tools I work with</h3>
+    <dl class="facts">
+      <dt>Languages</dt><dd>Python · Go · SQL · Bash</dd>
+      <dt>ML &amp; serving</dt><dd>PyTorch · scikit-learn · ONNX · vLLM · Triton · Hugging Face · LoRA/QLoRA · quantisation</dd>
+      <dt>Platform</dt><dd>Kubernetes · Docker · Helm · Terraform · Argo CD · GitLab CI · GitHub Actions</dd>
+      <dt>Data</dt><dd>Kafka · NATS · Airflow · MLflow · Spark · ClickHouse · Redis · PostgreSQL</dd>
+      <dt>Observability</dt><dd>Prometheus · Grafana · OpenTelemetry · drift and training/serving-skew monitoring</dd>
+      <dt>Hardware</dt><dd>NVIDIA H100 · Jetson AGX Orin / Orin Nano · Raspberry Pi 5 · STM32MP2</dd>
+    </dl>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="row">
+      <div class="row__when">2025 — 2028</div>
+      <div class="row__what">
+        <h3>PhD, Artificial Intelligence</h3>
+        <p class="row__org">JD-ICE — Università di Genova · UC3M · Queen Mary University of London</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row__when">2014 — 2018</div>
+      <div class="row__what">
+        <h3>MSc, Software Engineering</h3>
+        <p class="row__org">Islamic Azad University, South Tehran Branch</p>
+        <p>Thesis: optimising the XGBoost algorithm for semi-supervised datasets.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="row__when">2008 — 2013</div>
+      <div class="row__what">
+        <h3>BSc, Software Engineering</h3>
+        <p class="row__org">Islamic Azad University, Kashan Branch</p>
+      </div>
     </div>
   </section>
 
-</div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Write to me about edge inference, ML platforms, or research collaboration — I answer email.
+      I am based in Genoa, Italy (CET/CEST).
+    </p>
+    <p class="contact__mail"><a href="mailto:abedinia@duck.com">abedinia@duck.com</a></p>
+    <ul class="links">
+      <li><a href="https://scholar.google.com/citations?user=B1SRyKwAAAAJ&hl=en" rel="me noopener">Google Scholar</a></li>
+      <li><a href="https://github.com/abedinia" rel="me noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" rel="me noopener">LinkedIn</a></li>
+      <li><a href="https://orcid.org/0000-0001-9739-7021" rel="me noopener">ORCID</a></li>
+      <li><a href="https://medium.com/@abedinia.aydin" rel="me noopener">Medium</a></li>
+      <li><a href="https://adplist.org/mentors/aydin-abedinia-mrt06exd" rel="noopener">Mentoring</a></li>
+    </ul>
+  </section>
 
-<footer class="foot">
-  <div class="wrap foot__inner">
-    <div class="foot__lead"><b>Aydin Abedinia</b> &mdash; AI platform &amp; backend engineer</div>
-    <div class="foot__links">
-      <a href="https://github.com/abedinia" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://scholar.google.com/citations?user=B1SRyKwAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
-    </div>
-  </div>
+</main>
+
+<footer>
+  <p>Aydin Abedinia — Genoa, Italy</p>
 </footer>
 
 <script src="site.js"></script>
