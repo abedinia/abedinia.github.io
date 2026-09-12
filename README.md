@@ -1,6 +1,6 @@
 # abedinia.github.io
 
-Personal site for **Aydin Abedinia** — PhD researcher in edge AI, ML platform engineer.
+Personal site for **Aydin Abedinia** — PhD researcher in edge AI, backend and MLOps engineer.
 
 Plain HTML and CSS. No build step, no framework, no dependencies. The only
 JavaScript is the light/dark toggle. Fonts are
