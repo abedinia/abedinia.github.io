@@ -4,14 +4,159 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research — Aydin Abedinia</title>
-<meta name="robots" content="noindex, follow">
-<link rel="canonical" href="https://abedinia.github.io/#research">
-<meta http-equiv="refresh" content="0; url=./#research">
+<meta name="description" content="Hardware-aware inference for vision-language models and vision transformers; quantisation trade-offs; real-time driving-scenario understanding at the edge; semi-supervised learning.">
+<meta name="author" content="Aydin Abedinia">
+<link rel="canonical" href="https://abedinia.github.io/research.html">
+
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Aydin Abedinia">
+<meta property="og:title" content="Research — Aydin Abedinia">
+<meta property="og:description" content="Hardware-aware inference for vision-language models and vision transformers; quantisation trade-offs; real-time driving-scenario understanding at the edge; semi-supervised learning.">
+<meta property="og:url" content="https://abedinia.github.io/research.html">
+<meta property="og:image" content="https://abedinia.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
-<script>location.replace('./#research');</script>
+<script>(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+
+<!-- Google Analytics (GA4). Gated on hostname, so forks and local copies of
+     this repo never send data to my property. -->
+<script>
+(function () {
+  var HOSTS = ['abedinia.github.io'];
+  var ID = 'G-9020WB8L7L';
+  if (HOSTS.indexOf(location.hostname) === -1) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  gtag('js', new Date());
+  gtag('config', ID);
+})();
+</script>
 </head>
 <body>
-<main><section class="intro"><p>This page has moved. <a href="./#research">Continue to Research &rarr;</a></p></section></main>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="shell">
+  <aside class="side">
+   <div class="card">
+    <div class="side__top">
+      <figure class="avatar">
+        <span class="avatar__mono" aria-hidden="true">AA</span>
+        <img class="avatar__img" src="image/profile.jpg" alt="Aydin Abedinia"
+             width="380" height="380" onerror="this.remove()">
+      </figure>
+      <div>
+        <span class="side__name">Aydin Abedinia</span>
+        <p class="side__role">PhD researcher, edge AI · ML platform engineer</p>
+        <p class="side__print">Genoa, Italy · abedinia@duck.com · abedinia.github.io</p>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Sections">
+     <ul>
+      <li><a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>About</span></a></li>
+      <li><a href="research.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6.5L4.6 18a2 2 0 0 0 1.7 3h11.4a2 2 0 0 0 1.7-3L14 9.5V3"/><path d="M7.2 15h9.6"/></svg><span>Research</span></a></li>
+      <li><a href="publications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v18H6.5A2.5 2.5 0 0 1 4 19.5z"/><path d="M8 7h7M8 11h7"/></svg><span>Publications</span></a></li>
+      <li><a href="work.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7" width="19" height="13" rx="2"/><path d="M8.5 7V5.5A1.5 1.5 0 0 1 10 4h4a1.5 1.5 0 0 1 1.5 1.5V7"/><path d="M2.5 12.5h19"/></svg><span>Work</span></a></li>
+      <li><a href="projects.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l-6-6 6-6M15 6l6 6-6 6"/></svg><span>Projects</span></a></li>
+      <li><a href="education.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9L12 4.5 21.5 9 12 13.5 2.5 9z"/><path d="M6.5 11v5c0 1.4 2.5 2.5 5.5 2.5s5.5-1.1 5.5-2.5v-5"/></svg><span>Education</span></a></li>
+      <li><a href="contact.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="M3 6.5l9 6 9-6"/></svg><span>Contact</span></a></li>
+     </ul>
+    </nav>
+    <div class="side__foot">
+      <ul class="social">
+        <li><a href="https://github.com/abedinia" rel="me noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a></li>
+        <li><a href="https://scholar.google.com/citations?user=B1SRyKwAAAAJ&amp;hl=en" rel="me noopener" aria-label="Google Scholar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" rel="me noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg></a></li>
+        <li><a href="https://orcid.org/0000-0001-9739-7021" rel="me noopener" aria-label="ORCID"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947 0 .525-.422.947-.947.947-.525 0-.946-.422-.946-.947 0-.516.421-.947.946-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.588-1.444 3.588-3.722 0-2.016-1.088-3.722-3.722-3.722h-2.163z"/></svg></a></li>
+        <li><a href="https://medium.com/@abedinia.aydin" rel="me noopener" aria-label="Medium"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg></a></li>
+      </ul>
+    </div>
+   </div>
+  </aside>
+
+  <main id="main">
+    <section class="panel">
+      <div class="panel__head">
+        <h1>Research</h1>
+        <div class="flagline" aria-hidden="true"></div>
+        <p>Getting reliable intelligence out of constrained resources — first scarce labels, now scarce compute.</p>
+      </div>
+
+      <div class="eyebrow">Current work</div>
+      <p>
+        I work on vision–language and large language models — how they actually run on real
+        hardware, and what architecture and quantisation choices cost in accuracy, throughput
+        and energy.
+      </p>
+
+      <div class="eyebrow">The doctorate</div>
+      <dl class="facts">
+        <dt>Programme</dt><dd>JD-ICE — Joint Doctorate in Interactive and Cognitive Environments</dd>
+        <dt>Host lab</dt><dd>Elios Lab, DITEN, Università degli Studi di Genova</dd>
+        <dt>Partners</dt><dd>Universidad Carlos III de Madrid · Queen Mary University of London</dd>
+        <dt>Period</dt><dd>Nov 2025 – 2028 (expected)</dd>
+      </dl>
+
+      <div class="eyebrow">Earlier: semi-supervised learning</div>
+      <p>
+        Pursued in parallel with full-time industry practice, in collaboration with Islamic Azad
+        University, South Tehran Branch. I originated <strong>Semi-CART</strong>, a distance-based
+        sample-weighting scheme that lets decision-tree induction exploit unlabeled
+        test-distribution structure through a weighted Gini/entropy split criterion, improving
+        accuracy in the label-scarce regime. The same weighting principle then carried over to
+        deep networks as <strong>SemiDeep</strong>. Both ship as installable Python packages, so
+        the published results are reproducible rather than merely described.
+      </p>
+
+      <div class="buts">
+        <a class="but" href="publications.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v18H6.5A2.5 2.5 0 0 1 4 19.5z"/><path d="M8 7h7M8 11h7"/></svg><span>Publications</span></a>
+        <a class="but but--ghost" href="projects.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l-6-6 6-6M15 6l6 6-6 6"/></svg><span>Code &amp; benchmarks</span></a>
+      </div>
+    </section>
+  </main>
+
+  <aside class="rail">
+   <div class="card rail__in">
+    <div class="rail__head">
+      <h2>Contact me</h2>
+      <div class="flagline"></div>
+    </div>
+    <ul class="contacts">
+      <li><a href="mailto:abedinia@duck.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="M3 6.5l9 6 9-6"/></svg><span>Email</span></a></li>
+      <li><a href="https://www.linkedin.com/in/aydin-abedinia-96b2276b/" rel="me noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg><span>LinkedIn</span></a></li>
+      <li><a href="https://scholar.google.com/citations?user=B1SRyKwAAAAJ&amp;hl=en" rel="me noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg><span>Scholar</span></a></li>
+      <li><a href="https://orcid.org/0000-0001-9739-7021" rel="me noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947 0 .525-.422.947-.947.947-.525 0-.946-.422-.946-.947 0-.516.421-.947.946-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.588-1.444 3.588-3.722 0-2.016-1.088-3.722-3.722-3.722h-2.163z"/></svg><span>ORCID</span></a></li>
+      <li><a href="https://adplist.org/mentors/aydin-abedinia-mrt06exd" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.1 5.4L19.5 10l-5.4 2.1L12 17.5 9.9 12.1 4.5 10l5.4-1.6L12 3z"/></svg><span>Mentoring</span></a></li>
+    </ul>
+    <a class="but" href="https://github.com/abedinia" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>Follow on GitHub</span></a>
+    <p class="rail__note">Genoa, Italy · CET/CEST<br>I answer email.</p>
+   </div>
+  </aside>
+
+  <footer>
+    <div class="flagline" aria-hidden="true"></div>
+    <p>Aydin Abedinia — Genoa, Italy</p>
+  </footer>
+</div>
+
+<button id="theme" class="toggle" type="button" aria-label="Switch between light and dark">
+  <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.3"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4L17 7M7 17l-1.6 1.6"/></svg>
+  <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+</button>
+
+<script src="site.js"></script>
 </body>
 </html>
